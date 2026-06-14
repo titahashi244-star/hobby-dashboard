@@ -3,252 +3,137 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Day Boost ✨ マイカルチャー</title>
+  <title>Day Boost</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
+    html, body {
       font-family: 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
-      background: linear-gradient(160deg, #fff7ed 0%, #fef3f2 40%, #f0f9ff 100%);
-      color: #2d2a32;
-      padding-bottom: 40px;
+      background: #14161c;
+      color: #f3f1ec;
+    }
+    a { color: inherit; }
+
+    .page { max-width: 640px; margin: 0 auto; padding: 0 0 60px; }
+
+    header { padding: 28px 20px 18px; }
+    .top-row { display: flex; justify-content: space-between; align-items: flex-start; }
+    .brand { display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700; letter-spacing: 0.12em; color: #8b8f9b; text-transform: uppercase; }
+    .brand .dot { width: 8px; height: 8px; border-radius: 50%; background: #ff5c7a; }
+    .date-big { font-size: 34px; font-weight: 800; letter-spacing: -0.01em; margin-top: 8px; }
+    .date-sub { font-size: 13px; color: #8b8f9b; margin-top: 4px; }
+    .weather-pill {
+      display: flex; align-items: center; gap: 6px; background: #1f232c; border: 1px solid #2c3140;
+      border-radius: 999px; padding: 6px 14px; font-size: 13px; font-weight: 700; color: #f3f1ec; flex-shrink: 0;
     }
 
-    header {
-      background: linear-gradient(120deg, #ff6a88 0%, #ff9966 45%, #ffd36e 100%);
-      color: white; padding: 28px 24px 24px;
-      border-radius: 0 0 28px 28px;
-      box-shadow: 0 6px 24px rgba(255,106,136,0.25);
+    .quote {
+      margin: 18px 20px 0; padding: 14px 18px; border-radius: 14px;
+      background: #1f232c; border: 1px solid #2c3140; font-size: 13px; font-style: italic;
+      color: #c7cad3; line-height: 1.8;
     }
-    .header-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap; }
-    .header-title-row { display: flex; align-items: center; gap: 10px; }
-    header h1 { font-size: 20px; font-weight: 800; letter-spacing: 0.03em; }
-    .header-date { font-size: 26px; font-weight: 800; margin-top: 6px; }
-    .header-day { font-size: 12px; opacity: 0.85; margin-top: 2px; }
-    .meta { font-size: 11px; opacity: 0.75; margin-top: 4px; }
-    .weather-box { display: flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.22); border-radius: 16px; padding: 8px 16px; backdrop-filter: blur(4px); }
-    .weather-icon { font-size: 26px; line-height: 1; }
-    .weather-temp { font-size: 20px; font-weight: 800; line-height: 1; }
-    .weather-desc { font-size: 10px; opacity: 0.85; margin-top: 2px; }
 
-    .quote-bubble {
-      margin-top: 18px; background: rgba(255,255,255,0.22); border-radius: 18px;
-      padding: 12px 18px; font-size: 13px; font-style: italic; line-height: 1.7;
-      backdrop-filter: blur(6px); border: 1px solid rgba(255,255,255,0.3);
-      display: flex; align-items: center; gap: 10px;
-    }
-    .quote-bubble .robot { font-size: 28px; flex-shrink: 0; }
-
-    /* 検索ボックス */
-    .search-wrap { padding: 20px 20px 0; max-width: 1100px; margin: 0 auto; }
-    .search-box {
-      display: flex; gap: 8px; background: white; border-radius: 999px;
-      padding: 6px 8px 6px 20px; box-shadow: 0 4px 16px rgba(0,0,0,0.07);
-      border: 2px solid #ffe1cc;
-    }
+    .search-wrap { padding: 18px 20px 0; }
+    .search-box { display: flex; gap: 8px; }
     .search-box input {
-      flex: 1; border: none; outline: none; font-size: 15px; background: transparent;
-      color: #2d2a32;
+      flex: 1; border: 1px solid #2c3140; outline: none; font-size: 14px; background: #1f232c;
+      color: #f3f1ec; border-radius: 999px; padding: 12px 18px;
     }
-    .search-box input::placeholder { color: #cbb; }
+    .search-box input::placeholder { color: #6b6f7b; }
     .search-box button {
-      border: none; cursor: pointer; border-radius: 999px; padding: 10px 22px;
-      font-size: 14px; font-weight: 700; color: white;
-      background: linear-gradient(120deg, #ff6a88, #ff9966);
-      transition: transform 0.1s;
+      border: none; cursor: pointer; border-radius: 999px; padding: 12px 22px;
+      font-size: 13px; font-weight: 700; color: #14161c; background: #ffd166;
     }
-    .search-box button:active { transform: scale(0.96); }
-    .search-hint { font-size: 11px; color: #c9a; margin: 8px 4px 0; }
+    .search-box button:active { transform: scale(0.97); }
 
-    .trend-banner {
-      margin: 18px 20px 0; max-width: 1060px; margin-left: auto; margin-right: auto;
-      background: linear-gradient(120deg, #6a82fb, #fc5c7d);
-      color: white; padding: 14px 22px; border-radius: 16px; font-size: 13px;
-      display: flex; align-items: center; gap: 10px; box-shadow: 0 4px 14px rgba(106,130,251,0.25);
-      line-height: 1.7;
+    .filters { display: flex; gap: 8px; padding: 16px 20px 0; overflow-x: auto; }
+    .filter-chip {
+      flex-shrink: 0; font-size: 12px; font-weight: 700; padding: 7px 16px; border-radius: 999px;
+      border: 1px solid #2c3140; background: #1f232c; color: #c7cad3; cursor: pointer; white-space: nowrap;
+      display: flex; align-items: center; gap: 6px;
     }
-    .trend-banner .emoji { font-size: 20px; flex-shrink: 0; }
-    .trend-banner strong { color: #fff7b0; }
+    .filter-chip.active { background: #f3f1ec; color: #14161c; border-color: #f3f1ec; }
+    .filter-chip .swatch { width: 8px; height: 8px; border-radius: 50%; }
 
-    .container { max-width: 1100px; margin: 0 auto; padding: 20px 20px 0; }
-
-    .summary-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 24px; }
-    .summary-card {
-      background: white; border-radius: 18px; padding: 18px 20px;
-      box-shadow: 0 3px 12px rgba(0,0,0,0.06); cursor: pointer;
-      transition: transform 0.15s, box-shadow 0.15s; border: 2px solid transparent;
+    .feed { padding: 18px 20px 0; display: flex; flex-direction: column; gap: 14px; }
+    .card {
+      background: #1c1f27; border-radius: 18px; padding: 18px 20px;
+      border-left: 4px solid var(--accent); position: relative;
     }
-    .summary-card:hover { transform: translateY(-3px) scale(1.01); box-shadow: 0 8px 22px rgba(0,0,0,0.1); }
-    .summary-card.c1 { border-color: #b6f0c9; }
-    .summary-card.c2 { border-color: #ffc6d9; }
-    .summary-card.c3 { border-color: #c6d4ff; }
-    .summary-card.c4 { border-color: #ffe0b3; }
-    .card-emoji { font-size: 28px; }
-    .count { font-size: 34px; font-weight: 800; margin-top: 4px; }
-    .c1 .count { color: #2bb673; }
-    .c2 .count { color: #ff6a88; }
-    .c3 .count { color: #6a82fb; }
-    .c4 .count { color: #ff9f43; }
-    .clabel { font-size: 13px; color: #999; font-weight: 700; margin-top: 2px; }
-
-    .section { margin-bottom: 26px; }
-    .sec-header { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
-    .sec-header h2 { font-size: 17px; font-weight: 800; }
-    .stag { font-size: 11px; padding: 3px 12px; border-radius: 20px; font-weight: 700; color: white; }
-    .stag.t1 { background: #2bb673; }
-    .stag.t2 { background: #ff6a88; }
-    .stag.t3 { background: #6a82fb; }
-    .stag.t4 { background: #ff9f43; }
-
-    .news-list { display: flex; flex-direction: column; gap: 12px; }
-    .news-card {
-      background: white; border-radius: 16px; padding: 16px 20px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05); display: flex; gap: 16px; align-items: flex-start;
-      transition: transform 0.12s;
+    .card-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 10px; }
+    .cat-tag { display: flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 800; letter-spacing: 0.06em; color: var(--accent); text-transform: uppercase; }
+    .cat-tag i { font-size: 14px; }
+    .card-date { font-size: 11px; color: #6b6f7b; }
+    .new-flag { font-size: 10px; font-weight: 800; color: #14161c; background: var(--accent); padding: 2px 8px; border-radius: 999px; margin-left: 6px; }
+    .card-title { font-size: 16px; font-weight: 700; line-height: 1.5; margin-bottom: 6px; }
+    .card-title a { text-decoration: none; }
+    .card-title a:hover { text-decoration: underline; }
+    .card-desc { font-size: 13px; color: #9fa3ad; line-height: 1.75; }
+    .card-foot { display: flex; align-items: center; justify-content: space-between; margin-top: 14px; gap: 10px; }
+    .card-source { font-size: 11px; color: #6b6f7b; }
+    .more-btn {
+      font-size: 11px; font-weight: 700; color: #c7cad3; background: #262a34; border: 1px solid #323845;
+      border-radius: 999px; padding: 6px 14px; cursor: pointer; display: flex; align-items: center; gap: 6px;
+      flex-shrink: 0;
     }
-    .news-card:hover { transform: translateX(2px); }
-    .icon { width: 42px; height: 42px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0; }
-    .i1 { background: #e9fbf0; }
-    .i2 { background: #ffeef2; }
-    .i3 { background: #eef1ff; }
-    .i4 { background: #fff5e6; }
-    .nbody { flex: 1; }
-    .ntitle { font-size: 14px; font-weight: 700; line-height: 1.5; margin-bottom: 4px; }
-    .ndesc  { font-size: 12px; color: #777; line-height: 1.7; }
-    .nfoot  { display: flex; align-items: center; gap: 10px; margin-top: 10px; flex-wrap: wrap; }
-    .nsrc   { font-size: 11px; color: #bbb; }
-    .pill   { font-size: 11px; padding: 3px 10px; border-radius: 20px; font-weight: 700; }
-    .p1 { background: #e9fbf0; color: #2bb673; }
-    .p2 { background: #ffeef2; color: #ff6a88; }
-    .p3 { background: #eef1ff; color: #6a82fb; }
-    .p4 { background: #fff5e6; color: #ff9f43; }
-    .search-pill {
-      font-size: 11px; padding: 3px 10px; border-radius: 20px; font-weight: 700;
-      background: #f5f5f5; color: #999; border: none; cursor: pointer;
-    }
-    .search-pill:hover { background: #ffe1cc; color: #ff6a88; }
-    .empty { color: #ccc; font-size: 13px; padding: 16px; }
+    .more-btn:hover { background: #323845; }
 
-    .insight-box { border-radius: 14px; padding: 16px 20px; margin-top: 14px; display: flex; gap: 12px; align-items: flex-start; }
-    .insight-box.ib1 { background: #effdf4; border-left: 5px solid #2bb673; }
-    .insight-box.ib2 { background: #fff0f4; border-left: 5px solid #ff6a88; }
-    .insight-box.ib3 { background: #f0f3ff; border-left: 5px solid #6a82fb; }
-    .insight-box.ib4 { background: #fff8ec; border-left: 5px solid #ff9f43; }
-    .insight-label { font-size: 11px; font-weight: 800; margin-bottom: 6px; letter-spacing: 0.05em; }
-    .ib1 .insight-label { color: #2bb673; }
-    .ib2 .insight-label { color: #ff6a88; }
-    .ib3 .insight-label { color: #6a82fb; }
-    .ib4 .insight-label { color: #ff9f43; }
-    .insight-text { font-size: 13px; color: #555; line-height: 1.8; }
+    .acc-tennis { --accent: #4ce0a0; }
+    .acc-music  { --accent: #ff5c7a; }
+    .acc-tech   { --accent: #5c9dff; }
+    .acc-culture{ --accent: #ffd166; }
 
-    footer { text-align: center; padding: 28px 0 12px; font-size: 12px; color: #ccc; }
+    .empty { text-align: center; color: #6b6f7b; font-size: 13px; padding: 40px 20px; }
 
-    @media (max-width: 640px) {
-      header { padding: 20px 16px; border-radius: 0 0 22px 22px; }
-      .header-date { font-size: 22px; }
-      header h1 { font-size: 17px; }
-      .container { padding: 16px 12px 0; }
-      .search-wrap { padding: 16px 12px 0; }
-      .trend-banner { margin: 14px 12px 0; }
-      .summary-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
-      .count { font-size: 26px; }
-      .news-card { padding: 12px 14px; gap: 10px; }
-      .icon { width: 34px; height: 34px; font-size: 17px; }
-      .ntitle { font-size: 13px; }
-      .ndesc { font-size: 11px; }
-      .insight-box { padding: 12px 14px; }
-      .insight-text { font-size: 12px; }
+    footer { text-align: center; padding: 30px 20px 0; font-size: 11px; color: #4d5160; }
+
+    @media (max-width: 480px) {
+      .date-big { font-size: 28px; }
+      header { padding: 22px 16px 14px; }
+      .quote, .search-wrap, .filters, .feed { padding-left: 16px; padding-right: 16px; }
+      .card { padding: 14px 16px; }
     }
   </style>
 </head>
 <body>
-<header>
-  <div class="header-top">
-    <div>
-      <div class="header-title-row">
-        <span style="font-size:28px;">✨</span>
-        <h1>Day Boost — マイカルチャー</h1>
-      </div>
-      <div class="header-date" id="header-date"></div>
-      <div class="header-day" id="header-day"></div>
-      <div class="meta" id="updated-at">読み込み中...</div>
-    </div>
-    <div class="weather-box" id="weather-box" style="display:none">
-      <div class="weather-icon" id="weather-icon">⛅</div>
+<div class="page">
+  <header>
+    <div class="top-row">
       <div>
-        <div class="weather-temp" id="weather-temp">--°</div>
-        <div class="weather-desc" id="weather-desc">東京</div>
+        <div class="brand"><span class="dot"></span>Day Boost</div>
+        <div class="date-big" id="header-date"></div>
+        <div class="date-sub" id="updated-at">読み込み中...</div>
+      </div>
+      <div class="weather-pill" id="weather-box" style="display:none">
+        <span id="weather-icon"></span><span id="weather-temp"></span>
       </div>
     </div>
-  </div>
-  <div class="quote-bubble" id="quote-row" style="visibility:hidden">
-    <div class="robot">🦊</div>
-    <div id="quote-text"></div>
-  </div>
-</header>
+  </header>
 
-<div class="search-wrap">
-  <form class="search-box" id="search-form">
-    <input type="text" id="search-input" placeholder="気になることをサクッと検索...（例: サカナクション 新譜）">
-    <button type="submit">🔍 検索</button>
-  </form>
-  <div class="search-hint">気になる記事のタグを押しても、その単語で検索できます</div>
+  <div class="quote" id="quote-row" style="display:none">
+    <span id="quote-text"></span>
+  </div>
+
+  <div class="search-wrap">
+    <form class="search-box" id="search-form">
+      <input type="text" id="search-input" placeholder="気になることを検索...">
+      <button type="submit"><i class="ti ti-search" aria-hidden="true"></i></button>
+    </form>
+  </div>
+
+  <div class="filters" id="filters">
+    <div class="filter-chip active" data-filter="all">すべて</div>
+    <div class="filter-chip" data-filter="tennis"><span class="swatch" style="background:#4ce0a0"></span>テニス</div>
+    <div class="filter-chip" data-filter="music"><span class="swatch" style="background:#ff5c7a"></span>音楽</div>
+    <div class="filter-chip" data-filter="tech"><span class="swatch" style="background:#5c9dff"></span>ガジェット・AI</div>
+    <div class="filter-chip" data-filter="culture"><span class="swatch" style="background:#ffd166"></span>アート・旅</div>
+  </div>
+
+  <div class="feed" id="feed"></div>
+
+  <footer>Day Boost — 毎朝自動更新</footer>
 </div>
 
-<div class="trend-banner" id="trend-banner" style="display:none">
-  <span class="emoji">🌈</span><span id="trend-text"></span>
-</div>
-
-<div class="container">
-  <div class="summary-grid">
-    <div class="summary-card c1" onclick="document.getElementById('section1').scrollIntoView({behavior:'smooth'})">
-      <div class="card-emoji">🎾</div><div class="count" id="cnt1">-</div><div class="clabel">テニス</div>
-      <div id="keywords1" style="margin-top:8px;font-size:11px;color:#2bb673;line-height:1.8;"></div>
-    </div>
-    <div class="summary-card c2" onclick="document.getElementById('section2').scrollIntoView({behavior:'smooth'})">
-      <div class="card-emoji">🎵</div><div class="count" id="cnt2">-</div><div class="clabel">音楽</div>
-      <div id="keywords2" style="margin-top:8px;font-size:11px;color:#ff6a88;line-height:1.8;"></div>
-    </div>
-    <div class="summary-card c3" onclick="document.getElementById('section3').scrollIntoView({behavior:'smooth'})">
-      <div class="card-emoji">💻</div><div class="count" id="cnt3">-</div><div class="clabel">ガジェット・AI</div>
-      <div id="keywords3" style="margin-top:8px;font-size:11px;color:#6a82fb;line-height:1.8;"></div>
-    </div>
-    <div class="summary-card c4" onclick="document.getElementById('section4').scrollIntoView({behavior:'smooth'})">
-      <div class="card-emoji">🏝️</div><div class="count" id="cnt4">-</div><div class="clabel">アート・旅・お出かけ</div>
-      <div id="keywords4" style="margin-top:8px;font-size:11px;color:#ff9f43;line-height:1.8;"></div>
-    </div>
-  </div>
-
-  <div class="section" id="section1">
-    <div class="sec-header"><h2>🎾 テニス</h2><span class="stag t1">ATP/WTA・国内大会</span></div>
-    <div class="news-list" id="list1"></div>
-    <div class="insight-box ib1" id="insight1" style="display:none">
-      <div style="flex:1"><div class="insight-label">📌 注目ポイント</div><div class="insight-text" id="insight1-text"></div></div>
-    </div>
-  </div>
-  <div class="section" id="section2">
-    <div class="sec-header"><h2>🎵 音楽</h2><span class="stag t2">サカナクション 他</span></div>
-    <div class="news-list" id="list2"></div>
-    <div class="insight-box ib2" id="insight2" style="display:none">
-      <div style="flex:1"><div class="insight-label">📌 注目ポイント</div><div class="insight-text" id="insight2-text"></div></div>
-    </div>
-  </div>
-  <div class="section" id="section3">
-    <div class="sec-header"><h2>💻 ガジェット・AI</h2><span class="stag t3">新製品・AI動向</span></div>
-    <div class="news-list" id="list3"></div>
-    <div class="insight-box ib3" id="insight3" style="display:none">
-      <div style="flex:1"><div class="insight-label">📌 注目ポイント</div><div class="insight-text" id="insight3-text"></div></div>
-    </div>
-  </div>
-  <div class="section" id="section4">
-    <div class="sec-header"><h2>🏝️ アート・旅・お出かけ</h2><span class="stag t4">展覧会・川崎/鶴見・世界遺産・離島・海外</span></div>
-    <div class="news-list" id="list4"></div>
-    <div class="insight-box ib4" id="insight4" style="display:none">
-      <div style="flex:1"><div class="insight-label">💡 おすすめの過ごし方</div><div class="insight-text" id="insight4-text"></div></div>
-    </div>
-  </div>
-</div>
-<footer>Day Boost — マイカルチャー・ダッシュボード ／ 毎朝自動更新</footer>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/3.1.0/iconfont/tabler-icons.min.css"></script>
 <script>
 const WEATHER_CODES = {
   0:'☀️', 1:'🌤️', 2:'⛅', 3:'☁️',
@@ -260,12 +145,18 @@ const WEATHER_CODES = {
   95:'⛈️', 96:'⛈️', 99:'⛈️'
 };
 
+const CATS = {
+  tennis:  { label: 'テニス',       icon: 'ti-ball-tennis',     cls: 'acc-tennis' },
+  music:   { label: '音楽',         icon: 'ti-music',           cls: 'acc-music' },
+  tech:    { label: 'ガジェット・AI', icon: 'ti-device-laptop', cls: 'acc-tech' },
+  culture: { label: 'アート・旅',     icon: 'ti-beach',          cls: 'acc-culture' }
+};
+
 function setupHeader() {
   const now = new Date();
   const days = ['日', '月', '火', '水', '木', '金', '土'];
   document.getElementById('header-date').textContent =
-    `${now.getFullYear()}年${now.getMonth()+1}月${now.getDate()}日`;
-  document.getElementById('header-day').textContent = `${days[now.getDay()]}曜日`;
+    `${now.getMonth()+1}月${now.getDate()}日(${days[now.getDay()]})`;
 }
 
 async function loadWeather() {
@@ -276,7 +167,6 @@ async function loadWeather() {
     const code = data.current.weathercode;
     document.getElementById('weather-icon').textContent = WEATHER_CODES[code] || '🌡️';
     document.getElementById('weather-temp').textContent = temp + '°C';
-    document.getElementById('weather-desc').textContent = '東京　現在';
     document.getElementById('weather-box').style.display = 'flex';
   } catch(e) {}
 }
@@ -284,7 +174,6 @@ async function loadWeather() {
 setupHeader();
 loadWeather();
 
-// 検索フォーム：Googleで新しいタブを開く
 document.getElementById('search-form').addEventListener('submit', (e) => {
   e.preventDefault();
   const q = document.getElementById('search-input').value.trim();
@@ -296,95 +185,82 @@ function searchFor(text) {
   window.open('https://www.google.com/search?q=' + encodeURIComponent(text), '_blank');
 }
 
-const SECTIONS = [
-  { id: '1', icon: '🎾', iconCls: 'i1', pillCls: 'p1' },
-  { id: '2', icon: '🎵', iconCls: 'i2', pillCls: 'p2' },
-  { id: '3', icon: '💻', iconCls: 'i3', pillCls: 'p3' },
-  { id: '4', icon: '🏝️', iconCls: 'i4', pillCls: 'p4' }
-];
-
 function isNew(dateStr) {
-  const d = new Date(dateStr.replace(/\//g, '-'));
+  const d = new Date(String(dateStr).replace(/\//g, '-'));
   const diff = (new Date() - d) / (1000 * 60 * 60 * 24);
   return diff <= 3;
 }
 
-function stars(score) {
-  if (!score) return '';
-  const filled = '★'.repeat(score);
-  const empty = '☆'.repeat(3 - score);
-  const color = score === 3 ? '#ff6a88' : score === 2 ? '#ffb84d' : '#ccc';
-  return `<span style="color:${color};font-size:13px;margin-left:6px;vertical-align:middle;">${filled}${empty}</span>`;
+function parseDate(dateStr) {
+  const t = new Date(String(dateStr).replace(/\//g, '-')).getTime();
+  return isNaN(t) ? 0 : t;
 }
 
-function card(item, s) {
-  const newBadge = isNew(item.date) ? '<span style="background:#ff6a88;color:white;font-size:10px;font-weight:800;padding:2px 8px;border-radius:20px;margin-left:8px;vertical-align:middle;">NEW</span>' : '';
-  const titleEsc = item.title.replace(/'/g, "\\'");
-  return `<div class="news-card">
-    <div class="icon ${s.iconCls}">${s.icon}</div>
-    <div class="nbody">
-      <div class="ntitle">${item.url ? `<a href="${item.url}" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;border-bottom:1px solid #eee;">${item.title}</a>` : item.title}${stars(item.score)}${newBadge}</div>
-      <div class="ndesc">${item.summary}</div>
-      <div class="nfoot">
-        <span class="nsrc">${item.source} ／ ${item.date}</span>
-        <span class="pill ${s.pillCls}">${item.tag}</span>
-        <button class="search-pill" onclick="searchFor('${titleEsc}')">🔍 もっと調べる</button>
-      </div>
+function card(item, catKey) {
+  const cat = CATS[catKey];
+  const newFlag = isNew(item.date) ? '<span class="new-flag">NEW</span>' : '';
+  const titleEsc = (item.title || '').replace(/'/g, "\\'");
+  return `<div class="card ${cat.cls}">
+    <div class="card-top">
+      <div class="cat-tag"><i class="${cat.icon}" aria-hidden="true"></i>${cat.label}${newFlag}</div>
+      <div class="card-date">${item.date || ''}</div>
+    </div>
+    <div class="card-title"><a href="${item.url}" target="_blank" rel="noopener">${item.title}</a></div>
+    <div class="card-desc">${item.summary || ''}</div>
+    <div class="card-foot">
+      <div class="card-source">${item.source || ''}</div>
+      <button class="more-btn" onclick="searchFor('${titleEsc}')"><i class="ti ti-search" aria-hidden="true"></i>もっと調べる</button>
     </div>
   </div>`;
 }
 
+let ALL_ITEMS = [];
+let CURRENT_FILTER = 'all';
+
+function renderFeed() {
+  const feed = document.getElementById('feed');
+  const items = CURRENT_FILTER === 'all' ? ALL_ITEMS : ALL_ITEMS.filter(i => i.cat === CURRENT_FILTER);
+  feed.innerHTML = items.length
+    ? items.map(i => card(i, i.cat)).join('')
+    : '<div class="empty">本日は該当情報がありません</div>';
+}
+
+document.getElementById('filters').addEventListener('click', (e) => {
+  const chip = e.target.closest('.filter-chip');
+  if (!chip) return;
+  document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
+  chip.classList.add('active');
+  CURRENT_FILTER = chip.dataset.filter;
+  renderFeed();
+});
+
 function render(data) {
-  document.getElementById('updated-at').textContent = '最終更新: ' + data.updated_at;
-  const quoteRow = document.getElementById('quote-row');
+  document.getElementById('updated-at').textContent = '最終更新 ' + data.updated_at;
   if (data.quote) {
-    document.getElementById('quote-text').textContent = '「' + data.quote + '」';
-    quoteRow.style.visibility = 'visible';
+    document.getElementById('quote-text').textContent = '“ ' + data.quote + ' ”';
+    document.getElementById('quote-row').style.display = 'block';
   }
-  const trendBanner = document.getElementById('trend-banner');
-  if (data.trend_summary) {
-    document.getElementById('trend-text').innerHTML = '<strong>今日のトレンド：</strong>' + data.trend_summary;
-    trendBanner.style.display = 'flex';
-  } else {
-    trendBanner.style.display = 'none';
-  }
-  const keys = ['tennis', 'music', 'tech', 'culture'];
-  const insightKeys = ['tennis_insight', 'music_insight', 'tech_insight', 'culture_insight'];
-  const keywordKeys = ['tennis_keywords', 'music_keywords', 'tech_keywords', 'culture_keywords'];
-  keys.forEach((key, i) => {
-    const items = data[key] || [];
-    const s = SECTIONS[i];
-    document.getElementById('cnt' + s.id).textContent = items.length;
-    const keywords = data[keywordKeys[i]] || [];
-    document.getElementById('keywords' + s.id).textContent = keywords.map(k => '#' + k).join('　');
-    document.getElementById('list' + s.id).innerHTML = items.length
-      ? items.map(item => card(item, s)).join('')
-      : '<div class="empty">本日は該当情報がありません</div>';
-    const insight = data[insightKeys[i]];
-    const insightBox = document.getElementById('insight' + s.id);
-    if (insight) {
-      document.getElementById('insight' + s.id + '-text').textContent = insight;
-      insightBox.style.display = 'flex';
-    } else {
-      insightBox.style.display = 'none';
-    }
+  ALL_ITEMS = [];
+  Object.keys(CATS).forEach(key => {
+    (data[key] || []).forEach(item => ALL_ITEMS.push(Object.assign({ cat: key }, item)));
   });
+  ALL_ITEMS.sort((a, b) => {
+    const scoreDiff = (b.score || 0) - (a.score || 0);
+    if (scoreDiff !== 0) return scoreDiff;
+    return parseDate(b.date) - parseDate(a.date);
+  });
+  renderFeed();
 }
 
 const SAMPLE = {
-  updated_at: "サンプルデータ",
-  tennis: [
-    { title: "サンプル: 全豪オープン開幕", summary: "サンプルデータです。実際のデータは毎朝更新されます。", source: "サンプル", date: "2026/01/01", tag: "ATPツアー", score: 1 }
-  ],
-  music: [
-    { title: "サンプル: サカナクション新ツアー発表", summary: "サンプルデータです。実際のデータは毎朝更新されます。", source: "サンプル", date: "2026/01/01", tag: "ライブ", score: 1 }
-  ]
+  updated_at: 'サンプルデータ',
+  tennis: [{ title: 'サンプル記事', summary: '実際のデータは毎朝更新されます。', source: 'サンプル', date: '2026/01/01', score: 1, url: '#' }]
 };
 
 fetch('data.json?t=' + Date.now())
   .then(r => r.json())
   .then(data => {
-    const total = (data.tennis||[]).length + (data.music||[]).length + (data.tech||[]).length + (data.culture||[]).length;
+    const total = Object.keys(CATS).reduce((sum, k) => sum + (data[k]||[]).length, 0);
     render(total > 0 ? data : SAMPLE);
   })
   .catch(() => render(SAMPLE));
