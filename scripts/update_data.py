@@ -44,7 +44,7 @@ def strip_html(text):
     return re.sub(r"\s+", " ", text).strip()
 
 
-def fetch_items(query):
+def fetch_raw(query):
     url = (
         "https://news.google.com/rss/search?q="
         + urllib.parse.quote(query)
@@ -55,17 +55,18 @@ def fetch_items(query):
         xml_data = res.read()
     root = ET.fromstring(xml_data)
     items = []
-    for item in root.findall("./channel/item")[:MAX_ITEMS]:
+    for item in root.findall("./channel/item"):
         title = strip_html(item.findtext("title", ""))
         link = item.findtext("link", "")
         source_el = item.find("source")
         source = source_el.text if source_el is not None else "Google News"
         pub_date_raw = item.findtext("pubDate", "")
         try:
-            dt = datetime.strptime(pub_date_raw, "%a, %d %b %Y %H:%M:%S %Z")
-            date_str = dt.strftime("%Y/%m/%d")
+            pub_dt = datetime.strptime(pub_date_raw, "%a, %d %b %Y %H:%M:%S %Z")
+            pub_dt = pub_dt.replace(tzinfo=timezone.utc).astimezone(JST)
         except ValueError:
-            date_str = datetime.now(JST).strftime("%Y/%m/%d")
+            pub_dt = datetime.now(JST)
+        date_str = pub_dt.strftime("%Y/%m/%d")
         description = strip_html(item.findtext("description", ""))
         # Google News description often duplicates the title; fall back gracefully
         summary = description if description and description != title else title
@@ -77,8 +78,26 @@ def fetch_items(query):
             "date": date_str,
             "tag": "ニュース",
             "score": 1,
+            "_dt": pub_dt,
         })
+    items.sort(key=lambda x: x["_dt"], reverse=True)
     return items
+
+
+def fetch_items(query):
+    """Fetch recent items, preferring the last 3 days but widening the
+    window if too few recent results are found."""
+    now = datetime.now(JST)
+    raw = []
+    for window_days, suffix in ((3, " when:3d"), (14, " when:14d"), (None, "")):
+        raw = fetch_raw(query + suffix)
+        if window_days is not None:
+            raw = [it for it in raw if (now - it["_dt"]).days <= window_days]
+        if len(raw) >= 2 or suffix == "":
+            break
+    for it in raw:
+        del it["_dt"]
+    return raw[:MAX_ITEMS]
 
 
 def main():
