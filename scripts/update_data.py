@@ -18,8 +18,8 @@ CATEGORIES = {
         "tag": "テニス",
     },
     "music": {
-        "query": "サカナクション OR 邦楽 ライブ ツアー",
-        "keywords": ["サカナクション", "ライブ・ツアー", "邦楽ニュース"],
+        "query": "サカナクション OR 離婚伝説 OR THE BAWDIES OR ヨナヲ 新曲 OR ライブ",
+        "keywords": ["サカナクション", "離婚伝説", "THE BAWDIES", "ヨナヲ"],
         "tag": "音楽",
     },
     "tech": {
