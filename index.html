@@ -3,158 +3,219 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>マイカルチャー・ダッシュボード</title>
+  <title>Day Boost ✨ マイカルチャー</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Hiragino Sans', 'Yu Gothic UI', sans-serif; background: #f0f2f5; color: #1a1a2e; }
+    body {
+      font-family: 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      background: linear-gradient(160deg, #fff7ed 0%, #fef3f2 40%, #f0f9ff 100%);
+      color: #2d2a32;
+      padding-bottom: 40px;
+    }
 
     header {
-      background: var(--header-bg, linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%));
-      color: white; padding: 24px 32px;
-      display: grid; grid-template-columns: minmax(180px, auto) 1fr minmax(160px, auto);
-      align-items: center; gap: 20px;
-      transition: background 0.5s;
+      background: linear-gradient(120deg, #ff6a88 0%, #ff9966 45%, #ffd36e 100%);
+      color: white; padding: 28px 24px 24px;
+      border-radius: 0 0 28px 28px;
+      box-shadow: 0 6px 24px rgba(255,106,136,0.25);
     }
-    .header-left { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
-    .header-title-row { display: flex; align-items: center; gap: 10px; white-space: nowrap; }
-    header h1 { font-size: 18px; font-weight: 700; letter-spacing: 0.05em; white-space: nowrap; }
-    .header-date { font-size: 28px; font-weight: 800; letter-spacing: 0.03em; opacity: 0.95; margin-top: 2px; }
-    .header-day { font-size: 12px; opacity: 0.6; margin-top: 1px; }
-    .meta { font-size: 12px; opacity: 0.6; margin-top: 2px; }
-    .header-center { display: flex; align-items: center; justify-content: center; gap: 14px; }
-    .header-quote-robot { font-size: 42px; line-height: 1; flex-shrink: 0; filter: drop-shadow(0 2px 6px rgba(0,0,0,0.4)); }
-    .header-quote-bubble { position: relative; background: rgba(255,255,255,0.13); border-radius: 16px; border-bottom-left-radius: 4px; padding: 10px 16px; color: white; font-size: 13px; font-style: italic; line-height: 1.6; backdrop-filter: blur(6px); border: 1px solid rgba(255,255,255,0.22); width: 100%; }
-    .header-quote-bubble::before { content: ''; position: absolute; left: -8px; bottom: 10px; border-width: 5px 8px 5px 0; border-style: solid; border-color: transparent rgba(255,255,255,0.13) transparent transparent; }
-    .header-right { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
-    .badge { background: rgba(255,255,255,0.2); color: white; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; backdrop-filter: blur(4px); }
-    .weather-box { display: flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.15); border-radius: 16px; padding: 8px 16px; backdrop-filter: blur(4px); }
-    .weather-icon { font-size: 28px; line-height: 1; }
-    .weather-info { display: flex; flex-direction: column; }
-    .weather-temp { font-size: 22px; font-weight: 800; line-height: 1; }
-    .weather-desc { font-size: 11px; opacity: 0.8; margin-top: 2px; }
+    .header-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap; }
+    .header-title-row { display: flex; align-items: center; gap: 10px; }
+    header h1 { font-size: 20px; font-weight: 800; letter-spacing: 0.03em; }
+    .header-date { font-size: 26px; font-weight: 800; margin-top: 6px; }
+    .header-day { font-size: 12px; opacity: 0.85; margin-top: 2px; }
+    .meta { font-size: 11px; opacity: 0.75; margin-top: 4px; }
+    .weather-box { display: flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.22); border-radius: 16px; padding: 8px 16px; backdrop-filter: blur(4px); }
+    .weather-icon { font-size: 26px; line-height: 1; }
+    .weather-temp { font-size: 20px; font-weight: 800; line-height: 1; }
+    .weather-desc { font-size: 10px; opacity: 0.85; margin-top: 2px; }
 
-    .container { max-width: 1100px; margin: 0 auto; padding: 24px 20px; }
+    .quote-bubble {
+      margin-top: 18px; background: rgba(255,255,255,0.22); border-radius: 18px;
+      padding: 12px 18px; font-size: 13px; font-style: italic; line-height: 1.7;
+      backdrop-filter: blur(6px); border: 1px solid rgba(255,255,255,0.3);
+      display: flex; align-items: center; gap: 10px;
+    }
+    .quote-bubble .robot { font-size: 28px; flex-shrink: 0; }
 
-    .summary-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 28px; }
-    .summary-card { background: white; border-radius: 12px; padding: 20px 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); border-left: 4px solid; cursor: pointer; transition: transform 0.15s, box-shadow 0.15s; }
-    .summary-card:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.12); }
-    .summary-card.c1 { border-color: #2e9e5b; }
-    .summary-card.c2 { border-color: #e94560; }
-    .summary-card.c3 { border-color: #0f3460; }
-    .summary-card.c4 { border-color: #9b59b6; }
-    .count { font-size: 36px; font-weight: 700; }
-    .c1 .count { color: #2e9e5b; }
-    .c2 .count { color: #e94560; }
-    .c3 .count { color: #0f3460; }
-    .c4 .count { color: #9b59b6; }
-    .clabel { font-size: 13px; color: #888; margin-top: 2px; }
+    /* 検索ボックス */
+    .search-wrap { padding: 20px 20px 0; max-width: 1100px; margin: 0 auto; }
+    .search-box {
+      display: flex; gap: 8px; background: white; border-radius: 999px;
+      padding: 6px 8px 6px 20px; box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+      border: 2px solid #ffe1cc;
+    }
+    .search-box input {
+      flex: 1; border: none; outline: none; font-size: 15px; background: transparent;
+      color: #2d2a32;
+    }
+    .search-box input::placeholder { color: #cbb; }
+    .search-box button {
+      border: none; cursor: pointer; border-radius: 999px; padding: 10px 22px;
+      font-size: 14px; font-weight: 700; color: white;
+      background: linear-gradient(120deg, #ff6a88, #ff9966);
+      transition: transform 0.1s;
+    }
+    .search-box button:active { transform: scale(0.96); }
+    .search-hint { font-size: 11px; color: #c9a; margin: 8px 4px 0; }
 
-    .section { margin-bottom: 28px; }
+    .trend-banner {
+      margin: 18px 20px 0; max-width: 1060px; margin-left: auto; margin-right: auto;
+      background: linear-gradient(120deg, #6a82fb, #fc5c7d);
+      color: white; padding: 14px 22px; border-radius: 16px; font-size: 13px;
+      display: flex; align-items: center; gap: 10px; box-shadow: 0 4px 14px rgba(106,130,251,0.25);
+      line-height: 1.7;
+    }
+    .trend-banner .emoji { font-size: 20px; flex-shrink: 0; }
+    .trend-banner strong { color: #fff7b0; }
+
+    .container { max-width: 1100px; margin: 0 auto; padding: 20px 20px 0; }
+
+    .summary-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 24px; }
+    .summary-card {
+      background: white; border-radius: 18px; padding: 18px 20px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.06); cursor: pointer;
+      transition: transform 0.15s, box-shadow 0.15s; border: 2px solid transparent;
+    }
+    .summary-card:hover { transform: translateY(-3px) scale(1.01); box-shadow: 0 8px 22px rgba(0,0,0,0.1); }
+    .summary-card.c1 { border-color: #b6f0c9; }
+    .summary-card.c2 { border-color: #ffc6d9; }
+    .summary-card.c3 { border-color: #c6d4ff; }
+    .summary-card.c4 { border-color: #ffe0b3; }
+    .card-emoji { font-size: 28px; }
+    .count { font-size: 34px; font-weight: 800; margin-top: 4px; }
+    .c1 .count { color: #2bb673; }
+    .c2 .count { color: #ff6a88; }
+    .c3 .count { color: #6a82fb; }
+    .c4 .count { color: #ff9f43; }
+    .clabel { font-size: 13px; color: #999; font-weight: 700; margin-top: 2px; }
+
+    .section { margin-bottom: 26px; }
     .sec-header { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
-    .sec-header h2 { font-size: 16px; font-weight: 700; }
-    .stag { font-size: 11px; padding: 2px 10px; border-radius: 20px; font-weight: 600; color: white; }
-    .stag.t1 { background: #2e9e5b; }
-    .stag.t2 { background: #e94560; }
-    .stag.t3 { background: #0f3460; }
-    .stag.t4 { background: #9b59b6; }
+    .sec-header h2 { font-size: 17px; font-weight: 800; }
+    .stag { font-size: 11px; padding: 3px 12px; border-radius: 20px; font-weight: 700; color: white; }
+    .stag.t1 { background: #2bb673; }
+    .stag.t2 { background: #ff6a88; }
+    .stag.t3 { background: #6a82fb; }
+    .stag.t4 { background: #ff9f43; }
 
     .news-list { display: flex; flex-direction: column; gap: 12px; }
-    .news-card { background: white; border-radius: 10px; padding: 16px 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.06); display: flex; gap: 16px; align-items: flex-start; }
-    .icon { width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0; }
-    .i1 { background: #eafaf0; }
-    .i2 { background: #fff0f3; }
-    .i3 { background: #eef2ff; }
-    .i4 { background: #f6effa; }
+    .news-card {
+      background: white; border-radius: 16px; padding: 16px 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05); display: flex; gap: 16px; align-items: flex-start;
+      transition: transform 0.12s;
+    }
+    .news-card:hover { transform: translateX(2px); }
+    .icon { width: 42px; height: 42px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0; }
+    .i1 { background: #e9fbf0; }
+    .i2 { background: #ffeef2; }
+    .i3 { background: #eef1ff; }
+    .i4 { background: #fff5e6; }
     .nbody { flex: 1; }
-    .ntitle { font-size: 14px; font-weight: 600; line-height: 1.5; margin-bottom: 4px; }
-    .ndesc  { font-size: 12px; color: #666; line-height: 1.6; }
-    .nfoot  { display: flex; align-items: center; gap: 10px; margin-top: 8px; }
-    .nsrc   { font-size: 11px; color: #aaa; }
-    .pill   { font-size: 11px; padding: 2px 8px; border-radius: 20px; font-weight: 600; }
-    .p1 { background: #eafaf0; color: #2e9e5b; }
-    .p2 { background: #fff0f3; color: #e94560; }
-    .p3 { background: #eef2ff; color: #0f3460; }
-    .p4 { background: #f6effa; color: #9b59b6; }
-    .empty { color: #bbb; font-size: 13px; padding: 16px; }
+    .ntitle { font-size: 14px; font-weight: 700; line-height: 1.5; margin-bottom: 4px; }
+    .ndesc  { font-size: 12px; color: #777; line-height: 1.7; }
+    .nfoot  { display: flex; align-items: center; gap: 10px; margin-top: 10px; flex-wrap: wrap; }
+    .nsrc   { font-size: 11px; color: #bbb; }
+    .pill   { font-size: 11px; padding: 3px 10px; border-radius: 20px; font-weight: 700; }
+    .p1 { background: #e9fbf0; color: #2bb673; }
+    .p2 { background: #ffeef2; color: #ff6a88; }
+    .p3 { background: #eef1ff; color: #6a82fb; }
+    .p4 { background: #fff5e6; color: #ff9f43; }
+    .search-pill {
+      font-size: 11px; padding: 3px 10px; border-radius: 20px; font-weight: 700;
+      background: #f5f5f5; color: #999; border: none; cursor: pointer;
+    }
+    .search-pill:hover { background: #ffe1cc; color: #ff6a88; }
+    .empty { color: #ccc; font-size: 13px; padding: 16px; }
 
-    .insight-box { border-radius: 10px; padding: 16px 20px; margin-top: 14px; display: flex; gap: 12px; align-items: flex-start; }
-    .insight-box.ib1 { background: #f0fbf4; border-left: 4px solid #2e9e5b; }
-    .insight-box.ib2 { background: #fff8f0; border-left: 4px solid #e94560; }
-    .insight-box.ib3 { background: #f0f4ff; border-left: 4px solid #0f3460; }
-    .insight-box.ib4 { background: #f9f0fc; border-left: 4px solid #9b59b6; }
-    .insight-label { font-size: 11px; font-weight: 700; margin-bottom: 6px; letter-spacing: 0.05em; }
-    .ib1 .insight-label { color: #2e9e5b; }
-    .ib2 .insight-label { color: #e94560; }
-    .ib3 .insight-label { color: #0f3460; }
-    .ib4 .insight-label { color: #9b59b6; }
-    .insight-text { font-size: 13px; color: #444; line-height: 1.7; }
+    .insight-box { border-radius: 14px; padding: 16px 20px; margin-top: 14px; display: flex; gap: 12px; align-items: flex-start; }
+    .insight-box.ib1 { background: #effdf4; border-left: 5px solid #2bb673; }
+    .insight-box.ib2 { background: #fff0f4; border-left: 5px solid #ff6a88; }
+    .insight-box.ib3 { background: #f0f3ff; border-left: 5px solid #6a82fb; }
+    .insight-box.ib4 { background: #fff8ec; border-left: 5px solid #ff9f43; }
+    .insight-label { font-size: 11px; font-weight: 800; margin-bottom: 6px; letter-spacing: 0.05em; }
+    .ib1 .insight-label { color: #2bb673; }
+    .ib2 .insight-label { color: #ff6a88; }
+    .ib3 .insight-label { color: #6a82fb; }
+    .ib4 .insight-label { color: #ff9f43; }
+    .insight-text { font-size: 13px; color: #555; line-height: 1.8; }
 
-    .trend-banner { background: linear-gradient(135deg, #1a1a2e, #0f3460); color: white; padding: 12px 32px; font-size: 13px; display: flex; align-items: center; gap: 10px; }
-    .trend-banner strong { color: #f5a623; margin-right: 4px; }
-
-
-    footer { text-align: center; padding: 24px; font-size: 12px; color: #bbb; }
+    footer { text-align: center; padding: 28px 0 12px; font-size: 12px; color: #ccc; }
 
     @media (max-width: 640px) {
-      header { padding: 16px 20px; display: flex; flex-direction: column; gap: 12px; }
-      .header-date { font-size: 20px; }
-      header h1 { font-size: 16px; }
-      .header-center { order: 3; width: 100%; justify-content: flex-start; gap: 10px; }
-      .header-quote-bubble { font-size: 12px; flex: 1; }
-      .header-quote-robot { font-size: 30px; }
-      .header-right { flex-direction: row; align-items: center; width: 100%; justify-content: space-between; order: 2; }
-      .weather-temp { font-size: 18px; }
-      .weather-icon { font-size: 22px; }
-      .container { padding: 16px 12px; }
-      .summary-grid { grid-template-columns: 1fr; gap: 10px; }
-      .count { font-size: 28px; }
+      header { padding: 20px 16px; border-radius: 0 0 22px 22px; }
+      .header-date { font-size: 22px; }
+      header h1 { font-size: 17px; }
+      .container { padding: 16px 12px 0; }
+      .search-wrap { padding: 16px 12px 0; }
+      .trend-banner { margin: 14px 12px 0; }
+      .summary-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+      .count { font-size: 26px; }
       .news-card { padding: 12px 14px; gap: 10px; }
-      .icon { width: 32px; height: 32px; font-size: 16px; }
+      .icon { width: 34px; height: 34px; font-size: 17px; }
       .ntitle { font-size: 13px; }
       .ndesc { font-size: 11px; }
-      .nfoot { flex-wrap: wrap; gap: 6px; }
-      .trend-banner { padding: 10px 16px; font-size: 12px; }
       .insight-box { padding: 12px 14px; }
       .insight-text { font-size: 12px; }
     }
   </style>
 </head>
 <body>
-<header id="main-header">
-  <div class="header-left">
-    <div class="header-title-row">
-      <span id="season-icon" style="font-size:28px;">🌈</span>
-      <h1>マイカルチャー・ダッシュボード</h1>
+<header>
+  <div class="header-top">
+    <div>
+      <div class="header-title-row">
+        <span style="font-size:28px;">✨</span>
+        <h1>Day Boost — マイカルチャー</h1>
+      </div>
+      <div class="header-date" id="header-date"></div>
+      <div class="header-day" id="header-day"></div>
+      <div class="meta" id="updated-at">読み込み中...</div>
     </div>
-    <div class="header-date" id="header-date"></div>
-    <div class="header-day" id="header-day"></div>
-    <div class="meta" id="updated-at">読み込み中...</div>
-  </div>
-  <div class="header-center" id="header-quote-row" style="visibility:hidden">
-    <div class="header-quote-bubble" id="quote-text"></div>
-    <div class="header-quote-robot">🤖</div>
-  </div>
-  <div class="header-right">
-    <span class="badge">毎朝 自動更新</span>
     <div class="weather-box" id="weather-box" style="display:none">
       <div class="weather-icon" id="weather-icon">⛅</div>
-      <div class="weather-info">
+      <div>
         <div class="weather-temp" id="weather-temp">--°</div>
         <div class="weather-desc" id="weather-desc">東京</div>
       </div>
     </div>
   </div>
+  <div class="quote-bubble" id="quote-row" style="visibility:hidden">
+    <div class="robot">🦊</div>
+    <div id="quote-text"></div>
+  </div>
 </header>
+
+<div class="search-wrap">
+  <form class="search-box" id="search-form">
+    <input type="text" id="search-input" placeholder="気になることをサクッと検索...（例: サカナクション 新譜）">
+    <button type="submit">🔍 検索</button>
+  </form>
+  <div class="search-hint">気になる記事のタグを押しても、その単語で検索できます</div>
+</div>
+
 <div class="trend-banner" id="trend-banner" style="display:none">
-  <span>📈</span><span id="trend-text"></span>
+  <span class="emoji">🌈</span><span id="trend-text"></span>
 </div>
 
 <div class="container">
   <div class="summary-grid">
-    <div class="summary-card c1" onclick="document.getElementById('section1').scrollIntoView({behavior:'smooth'})"><div class="count" id="cnt1">-</div><div class="clabel">🎾 テニス</div><div id="keywords1" style="margin-top:8px;font-size:12px;color:#2e9e5b;line-height:1.8;"></div><span id="new1" style="display:none;font-size:11px;font-weight:700;color:white;background:#2e9e5b;padding:2px 10px;border-radius:20px;margin-top:4px;"></span></div>
-    <div class="summary-card c2" onclick="document.getElementById('section2').scrollIntoView({behavior:'smooth'})"><div class="count" id="cnt2">-</div><div class="clabel">🎵 音楽</div><div id="keywords2" style="margin-top:8px;font-size:12px;color:#e94560;line-height:1.8;"></div><span id="new2" style="display:none;font-size:11px;font-weight:700;color:white;background:#e94560;padding:2px 10px;border-radius:20px;margin-top:4px;"></span></div>
-    <div class="summary-card c3" onclick="document.getElementById('section3').scrollIntoView({behavior:'smooth'})"><div class="count" id="cnt3">-</div><div class="clabel">💻 ガジェット・AI</div><div id="keywords3" style="margin-top:8px;font-size:12px;color:#0f3460;line-height:1.8;"></div><span id="new3" style="display:none;font-size:11px;font-weight:700;color:white;background:#0f3460;padding:2px 10px;border-radius:20px;margin-top:4px;"></span></div>
-    <div class="summary-card c4" onclick="document.getElementById('section4').scrollIntoView({behavior:'smooth'})"><div class="count" id="cnt4">-</div><div class="clabel">🎨 アート・お出かけ・旅行</div><div id="keywords4" style="margin-top:8px;font-size:12px;color:#9b59b6;line-height:1.8;"></div><span id="new4" style="display:none;font-size:11px;font-weight:700;color:white;background:#9b59b6;padding:2px 10px;border-radius:20px;margin-top:4px;"></span></div>
+    <div class="summary-card c1" onclick="document.getElementById('section1').scrollIntoView({behavior:'smooth'})">
+      <div class="card-emoji">🎾</div><div class="count" id="cnt1">-</div><div class="clabel">テニス</div>
+      <div id="keywords1" style="margin-top:8px;font-size:11px;color:#2bb673;line-height:1.8;"></div>
+    </div>
+    <div class="summary-card c2" onclick="document.getElementById('section2').scrollIntoView({behavior:'smooth'})">
+      <div class="card-emoji">🎵</div><div class="count" id="cnt2">-</div><div class="clabel">音楽</div>
+      <div id="keywords2" style="margin-top:8px;font-size:11px;color:#ff6a88;line-height:1.8;"></div>
+    </div>
+    <div class="summary-card c3" onclick="document.getElementById('section3').scrollIntoView({behavior:'smooth'})">
+      <div class="card-emoji">💻</div><div class="count" id="cnt3">-</div><div class="clabel">ガジェット・AI</div>
+      <div id="keywords3" style="margin-top:8px;font-size:11px;color:#6a82fb;line-height:1.8;"></div>
+    </div>
+    <div class="summary-card c4" onclick="document.getElementById('section4').scrollIntoView({behavior:'smooth'})">
+      <div class="card-emoji">🏝️</div><div class="count" id="cnt4">-</div><div class="clabel">アート・旅・お出かけ</div>
+      <div id="keywords4" style="margin-top:8px;font-size:11px;color:#ff9f43;line-height:1.8;"></div>
+    </div>
   </div>
 
   <div class="section" id="section1">
@@ -179,32 +240,16 @@
     </div>
   </div>
   <div class="section" id="section4">
-    <div class="sec-header"><h2>🎨 アート・お出かけ・旅行</h2><span class="stag t4">展覧会・川崎/鶴見・旅行</span></div>
+    <div class="sec-header"><h2>🏝️ アート・旅・お出かけ</h2><span class="stag t4">展覧会・川崎/鶴見・世界遺産・離島・海外</span></div>
     <div class="news-list" id="list4"></div>
     <div class="insight-box ib4" id="insight4" style="display:none">
       <div style="flex:1"><div class="insight-label">💡 おすすめの過ごし方</div><div class="insight-text" id="insight4-text"></div></div>
     </div>
   </div>
 </div>
-<footer>マイカルチャー・ダッシュボード — 毎朝自動更新</footer>
+<footer>Day Boost — マイカルチャー・ダッシュボード ／ 毎朝自動更新</footer>
 
 <script>
-// 月ごとのテーマ
-const MONTH_THEMES = {
-  1:  { icon: '⛄', bg: 'linear-gradient(135deg, #1a1a2e 0%, #2d4a7a 60%, #4a90d9 100%)', label: '睦月' },
-  2:  { icon: '🌸', bg: 'linear-gradient(135deg, #2d1b3d 0%, #7b3f6e 60%, #e88fb0 100%)', label: '如月' },
-  3:  { icon: '🌸', bg: 'linear-gradient(135deg, #1a2d1a 0%, #3d7a4a 60%, #88d9a0 100%)', label: '弥生' },
-  4:  { icon: '🌷', bg: 'linear-gradient(135deg, #2d1a2d 0%, #7a3d6e 60%, #d988c8 100%)', label: '卯月' },
-  5:  { icon: '🌿', bg: 'linear-gradient(135deg, #1a2d1a 0%, #2d6b3d 60%, #5db870 100%)', label: '皐月' },
-  6:  { icon: '📡', bg: 'linear-gradient(135deg, #2a1a3e 0%, #4a2d6b 60%, #7b5ea8 100%)', label: '水無月' },
-  7:  { icon: '🌻', bg: 'linear-gradient(135deg, #2d2000 0%, #7a5500 60%, #e8a800 100%)', label: '文月' },
-  8:  { icon: '🌊', bg: 'linear-gradient(135deg, #001a2d 0%, #004a7a 60%, #0088d9 100%)', label: '葉月' },
-  9:  { icon: '🍂', bg: 'linear-gradient(135deg, #2d1a00 0%, #7a4400 60%, #d98800 100%)', label: '長月' },
-  10: { icon: '🍁', bg: 'linear-gradient(135deg, #2d1000 0%, #8b3300 60%, #d95b00 100%)', label: '神無月' },
-  11: { icon: '🍄', bg: 'linear-gradient(135deg, #1a1a1a 0%, #4a3520 60%, #8b6b40 100%)', label: '霜月' },
-  12: { icon: '❄️', bg: 'linear-gradient(135deg, #0d1b2d 0%, #1e3a5f 60%, #4a7fb5 100%)', label: '師走' },
-};
-
 const WEATHER_CODES = {
   0:'☀️', 1:'🌤️', 2:'⛅', 3:'☁️',
   45:'🌫️', 48:'🌫️',
@@ -215,43 +260,47 @@ const WEATHER_CODES = {
   95:'⛈️', 96:'⛈️', 99:'⛈️'
 };
 
-// ヘッダーの季節テーマ＆日付を設定
 function setupHeader() {
   const now = new Date();
-  const month = now.getMonth() + 1;
-  const theme = MONTH_THEMES[month];
-  document.getElementById('main-header').style.background = theme.bg;
-  document.getElementById('season-icon').innerHTML = theme.icon;
   const days = ['日', '月', '火', '水', '木', '金', '土'];
   document.getElementById('header-date').textContent =
-    `${now.getFullYear()}年${month}月${now.getDate()}日`;
-  document.getElementById('header-day').textContent =
-    `${days[now.getDay()]}曜日　${theme.label}`;
+    `${now.getFullYear()}年${now.getMonth()+1}月${now.getDate()}日`;
+  document.getElementById('header-day').textContent = `${days[now.getDay()]}曜日`;
 }
 
-// 東京の天気をOpen-Meteoから取得（APIキー不要）
 async function loadWeather() {
   try {
     const res = await fetch('https://api.open-meteo.com/v1/forecast?latitude=35.6762&longitude=139.6503&current=temperature_2m,weathercode&timezone=Asia/Tokyo');
     const data = await res.json();
     const temp = Math.round(data.current.temperature_2m);
     const code = data.current.weathercode;
-    const icon = WEATHER_CODES[code] || '🌡️';
-    document.getElementById('weather-icon').textContent = icon;
+    document.getElementById('weather-icon').textContent = WEATHER_CODES[code] || '🌡️';
     document.getElementById('weather-temp').textContent = temp + '°C';
     document.getElementById('weather-desc').textContent = '東京　現在';
     document.getElementById('weather-box').style.display = 'flex';
-  } catch(e) { /* 取得失敗時は非表示のまま */ }
+  } catch(e) {}
 }
 
 setupHeader();
 loadWeather();
 
+// 検索フォーム：Googleで新しいタブを開く
+document.getElementById('search-form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  const q = document.getElementById('search-input').value.trim();
+  if (!q) return;
+  window.open('https://www.google.com/search?q=' + encodeURIComponent(q), '_blank');
+});
+
+function searchFor(text) {
+  window.open('https://www.google.com/search?q=' + encodeURIComponent(text), '_blank');
+}
+
 const SECTIONS = [
   { id: '1', icon: '🎾', iconCls: 'i1', pillCls: 'p1' },
   { id: '2', icon: '🎵', iconCls: 'i2', pillCls: 'p2' },
   { id: '3', icon: '💻', iconCls: 'i3', pillCls: 'p3' },
-  { id: '4', icon: '🎨', iconCls: 'i4', pillCls: 'p4' }
+  { id: '4', icon: '🏝️', iconCls: 'i4', pillCls: 'p4' }
 ];
 
 function isNew(dateStr) {
@@ -264,21 +313,22 @@ function stars(score) {
   if (!score) return '';
   const filled = '★'.repeat(score);
   const empty = '☆'.repeat(3 - score);
-  const color = score === 3 ? '#e94560' : score === 2 ? '#f5a623' : '#aaa';
+  const color = score === 3 ? '#ff6a88' : score === 2 ? '#ffb84d' : '#ccc';
   return `<span style="color:${color};font-size:13px;margin-left:6px;vertical-align:middle;">${filled}${empty}</span>`;
 }
 
 function card(item, s) {
-  const newBadge = isNew(item.date) ? '<span style="background:#e94560;color:white;font-size:10px;font-weight:700;padding:2px 7px;border-radius:20px;margin-left:8px;vertical-align:middle;">NEW</span>' : '';
-  const highlight = item.score === 3 ? 'border-left:3px solid #e94560;' : '';
-  return `<div class="news-card" style="${highlight}">
+  const newBadge = isNew(item.date) ? '<span style="background:#ff6a88;color:white;font-size:10px;font-weight:800;padding:2px 8px;border-radius:20px;margin-left:8px;vertical-align:middle;">NEW</span>' : '';
+  const titleEsc = item.title.replace(/'/g, "\\'");
+  return `<div class="news-card">
     <div class="icon ${s.iconCls}">${s.icon}</div>
     <div class="nbody">
-      <div class="ntitle">${item.url ? `<a href="${item.url}" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;border-bottom:1px solid #ccc;">${item.title}</a>` : item.title}${stars(item.score)}${newBadge}</div>
+      <div class="ntitle">${item.url ? `<a href="${item.url}" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;border-bottom:1px solid #eee;">${item.title}</a>` : item.title}${stars(item.score)}${newBadge}</div>
       <div class="ndesc">${item.summary}</div>
       <div class="nfoot">
         <span class="nsrc">${item.source} ／ ${item.date}</span>
         <span class="pill ${s.pillCls}">${item.tag}</span>
+        <button class="search-pill" onclick="searchFor('${titleEsc}')">🔍 もっと調べる</button>
       </div>
     </div>
   </div>`;
@@ -286,7 +336,7 @@ function card(item, s) {
 
 function render(data) {
   document.getElementById('updated-at').textContent = '最終更新: ' + data.updated_at;
-  const quoteRow = document.getElementById('header-quote-row');
+  const quoteRow = document.getElementById('quote-row');
   if (data.quote) {
     document.getElementById('quote-text').textContent = '「' + data.quote + '」';
     quoteRow.style.visibility = 'visible';
@@ -304,17 +354,9 @@ function render(data) {
   keys.forEach((key, i) => {
     const items = data[key] || [];
     const s = SECTIONS[i];
-    const newCount = items.filter(item => isNew(item.date)).length;
     document.getElementById('cnt' + s.id).textContent = items.length;
     const keywords = data[keywordKeys[i]] || [];
     document.getElementById('keywords' + s.id).textContent = keywords.map(k => '#' + k).join('　');
-    const newEl = document.getElementById('new' + s.id);
-    if (newCount > 0) {
-      newEl.textContent = 'うち NEW ' + newCount + '件';
-      newEl.style.display = 'inline';
-    } else {
-      newEl.style.display = 'none';
-    }
     document.getElementById('list' + s.id).innerHTML = items.length
       ? items.map(item => card(item, s)).join('')
       : '<div class="empty">本日は該当情報がありません</div>';
