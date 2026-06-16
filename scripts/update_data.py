@@ -18,8 +18,8 @@ CATEGORIES = {
         "tag": "テニス",
     },
     "music": {
-        "query": "サカナクション OR 離婚伝説 OR THE BAWDIES OR ヨナヲ 新曲 OR ライブ",
-        "keywords": ["サカナクション", "離婚伝説", "THE BAWDIES", "ヨナヲ"],
+        "query": "サカナクション OR 音楽フェス OR ロックフェス 新曲 OR ライブ OR フェス 2026",
+        "keywords": ["サカナクション", "音楽フェス", "ロックフェス"],
         "tag": "音楽",
     },
     "tech": {
