@@ -2,8 +2,10 @@ name: Update Dashboard
 
 on:
   schedule:
-    # 22:00 UTC = 07:00 JST
+    # 22:00 UTC = 07:00 JST (main)
     - cron: '0 22 * * *'
+    # 23:00 UTC = 08:00 JST (backup in case 22:00 is skipped)
+    - cron: '0 23 * * *'
   workflow_dispatch: {}
 
 permissions:
