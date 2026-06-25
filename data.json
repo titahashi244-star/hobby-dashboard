@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/06/25 18:58",
+  "updated_at": "2026/06/25 19:24",
   "tennis": [
     {
       "title": "国際テニス連盟がワールドテニスへ名称変更 - サンスポ",
@@ -88,15 +88,6 @@
   ],
   "tech": [
     {
-      "title": "HRクラウド株式会社が新機能「書類選考AI」を搭載した採用エージェントを発表 - ニュースメディアVOIX",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9kUnhqN1ltWmNqekliajhEOHZ3aVJMRW1LY0E3MDlsOGlYU0VYcmd6UHdrQ0NVbDFMcklhU1hCUFhfd0lJMm5WVmpjbUthbEJ5NDJjR1BXQUcwN281NmJHc3puS2pGbWQzdDNZ?oc=5",
-      "summary": "HRクラウド株式会社が新機能「書類選考AI」を搭載した採用エージェントを発表 ニュースメディアVOIX",
-      "source": "ニュースメディアVOIX",
-      "date": "2026/06/25",
-      "tag": "ニュース",
-      "score": 1
-    },
-    {
       "title": "Microsoft、新しいOutlookに10以上の新機能追加へ なお残る移行への課題 - マイナビニュース",
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBtTDY0OUFUaVBhZTJRLVJQQVFzLU9aeXhqLW5tNFpSaFQ3WGxqLThqUm9MYTdoUDJOUkdsYXB6dG5yWm9fZUUtLUc5anVaM240a25oVnphOWdLdy1yUm1GS0RpQmdhQXk1?oc=5",
       "summary": "Microsoft、新しいOutlookに10以上の新機能追加へ なお残る移行への課題 マイナビニュース",
@@ -119,6 +110,15 @@
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5pVHpPTnIzS3dXaU1qMzk4VndmNENjUTc4cDFEYUtReGdoZnJDcy1zNzRXWVMwM0haeFRSMzh4Q2ZlQjFaSVU4dUc5azZMSDZJM1V3S09zdGhVYmFPY1NtSWVoYXFuVkxORmc?oc=5",
       "summary": "AI搭載いびきケアデバイス「SnoreCircle PRO MAX」が支援総額3,700万円を突破、睡眠の質向上に新しいAIガジェットツールを。 PR TIMES",
       "source": "PR TIMES",
+      "date": "2026/06/25",
+      "tag": "ニュース",
+      "score": 1
+    },
+    {
+      "title": "「CrowdStrike Falcon Next-Gen Identity Security」に新機能、AIエージェントのID管理を強化 - EnterpriseZine",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBPSS1aQXNUVVBJVzhLY2xmek8za2VvR09FbTJBUGxBamEwNC12WTNHZkFDMENCREpwREUyS1hkMjBmalF5eXA2VjF1ekJtOEoydFJkU3k5YVg2UQ?oc=5",
+      "summary": "「CrowdStrike Falcon Next-Gen Identity Security」に新機能、AIエージェントのID管理を強化 EnterpriseZine",
+      "source": "EnterpriseZine",
       "date": "2026/06/25",
       "tag": "ニュース",
       "score": 1
