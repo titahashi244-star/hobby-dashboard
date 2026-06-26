@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/06/26 19:29",
+  "updated_at": "2026/06/26 19:37",
   "tennis": [
     {
       "title": "引退表明の錦織圭が『ジャパンオープン2026』プラクティスセッションに登場！ 最終日にはこれまでの活躍を称えるセレモニ - ニコニコニュース",
@@ -88,10 +88,19 @@
   ],
   "tech": [
     {
-      "title": "LumeFlowAI、新機能「動画編集」をリリース - テキスト指示でAI生成動画を自在に編集 - Excite エキサイト",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBUbzlHcUlDT0drZUhjY0lSSUkwWS1EUTVWMDhEdlFFUUpZU2lTQzNkMk5Ta3k0MGlTSEItT3hRb2xTa1Izc3VqNUxMbGUtQTFXaVMtWUZjLVJnZDFSd28xTE9qUzh4QUNoVXc?oc=5",
-      "summary": "LumeFlowAI、新機能「動画編集」をリリース - テキスト指示でAI生成動画を自在に編集 Excite エキサイト",
-      "source": "Excite エキサイト",
+      "title": "LumeFlowAI、新機能「動画編集」をリリース - テキスト指示でAI生成動画を自在に編集 - RBB TODAY",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1YVHN4RGVzbll6VV82UGVGRmc1R2tVR3FCUXZuMEtGMWhiTjBiXzJZQmRtY0V5RzZMQnZWc2h4dGJjNkplWXJwdEdjS2YtbDVhSDlPbUQ1WTBqUXFNczV5bVpCYnNHSnRLNkJVb3RPcDVzZw?oc=5",
+      "summary": "LumeFlowAI、新機能「動画編集」をリリース - テキスト指示でAI生成動画を自在に編集 RBB TODAY",
+      "source": "RBB TODAY",
+      "date": "2026/06/26",
+      "tag": "ニュース",
+      "score": 1
+    },
+    {
+      "title": "電通総研、製造業向けAI搭載「iQUAVIS」の新機能を2027年1月提供 - Biz/Zine",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5nSmZjeEYxaWc1RlhGdGhWcjY2MkxyLWJRVUVQckg5OFdYNWJNaFg0LUNkS0tHTERyTy1XNDktSHNCUzc1N0RVa0dES3AzYmMy?oc=5",
+      "summary": "電通総研、製造業向けAI搭載「iQUAVIS」の新機能を2027年1月提供 Biz/Zine",
+      "source": "Biz/Zine",
       "date": "2026/06/26",
       "tag": "ニュース",
       "score": 1
@@ -106,19 +115,10 @@
       "score": 1
     },
     {
-      "title": "電通総研、製造業向け製品開発支援ソリューション「iQUAVIS（アイクアビス）」に独自開発したAIエージェントを搭載し、技術情報を自動で構造化する新機能を2027年に提供開始へ - PR TIMES",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1aWjQtTzk5V2NqN21QNXNBWmRDNnhfb3Q1U0NqY3hpVGd3U3RpVUxfUmNuR0RHQ1h6RWlhbFk5NGFOeklxam5vaF8wVmIwVmp5Z3hKblhOeDVWbEV5TS11cGlmLUQ1TlVUZ2c?oc=5",
-      "summary": "電通総研、製造業向け製品開発支援ソリューション「iQUAVIS（アイクアビス）」に独自開発したAIエージェントを搭載し、技術情報を自動で構造化する新機能を2027年に提供開始へ PR TIMES",
-      "source": "PR TIMES",
-      "date": "2026/06/26",
-      "tag": "ニュース",
-      "score": 1
-    },
-    {
-      "title": "「Google Finance」AI統合正式版リリース - jetstream.blog",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE0yZlROdW53enFtQnhGZzBpRG5VVXplS0IxZl9DZXh0MC1UcVB5QnBBdkR4WXJ6bHFNWTNIMndQWGZCaTFaVXhqMXJLME96SHQzYndqZVctTTF6YjRZSHpMSlRqZkVsNjRnamY0SUxLQmtsWWFRaEZhNQ?oc=5",
-      "summary": "「Google Finance」AI統合正式版リリース jetstream.blog",
-      "source": "jetstream.blog",
+      "title": "電通総研が製造業向け「iQUAVIS」にAIエージェントを搭載し新機能を2027年に提供開始する革新技術 - ニュースメディアVOIX",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9FXzc3RnhNRTRWem9POERMRGhmWjZiN1htVjdzYkZFOHRuVkJmbVFjeWZBOEJLQzYwRzhrQTlTQ3RTSDZTemM1ejNhcHlpWHhDWXhLNHB4YmNZVmZjTVV0NFJOVlBzWGtMX0QwQ3B2QQ?oc=5",
+      "summary": "電通総研が製造業向け「iQUAVIS」にAIエージェントを搭載し新機能を2027年に提供開始する革新技術 ニュースメディアVOIX",
+      "source": "ニュースメディアVOIX",
       "date": "2026/06/26",
       "tag": "ニュース",
       "score": 1
@@ -131,11 +131,20 @@
   ],
   "culture": [
     {
-      "title": "夜空と宇宙を旅する夏。六本木ヒルズで「天空の星まつり」開催へ | 黃信維（コウ・シンイ） | ニュース - Storm.mg",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5MbHpWWmU4MlIwS1AzU25xdHNKYzJBNk9IZHYxVUFKVnV1S3I5NVlzMWpjZUY5QzlmaGVVNk1VX0pvUkUtWEpxc00yMTc3eGps?oc=5",
-      "summary": "夜空と宇宙を旅する夏。六本木ヒルズで「天空の星まつり」開催へ | 黃信維（コウ・シンイ） | ニュース Storm.mg",
+      "title": "台湾・馬祖の祈りと暮らしを映す「切り紙」芸術 東京でテーマ展開幕 | 黃信維（コウ・シンイ） | ニュース - Storm.mg",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9DQWdBZTJpQ1pWWE84NEdQUGswN3ptZ3Q3aFJpbWtSRm81NThBc2dDQ0ZRSmQ0eXdvNnBaWkRlVVlaYlRxT0lVZ1dXaUc0ZENk?oc=5",
+      "summary": "台湾・馬祖の祈りと暮らしを映す「切り紙」芸術 東京でテーマ展開幕 | 黃信維（コウ・シンイ） | ニュース Storm.mg",
       "source": "Storm.mg",
-      "date": "2025/06/15",
+      "date": "2026/06/03",
+      "tag": "ニュース",
+      "score": 1
+    },
+    {
+      "title": "“読書×旅”で長崎の魅力を発見！ 「長崎ゆかりの作品フェア」 東京・福岡で開催 - 共同通信PRワイヤー",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5ORjdPVmI5aUhxZGNYeXJ4V0N6cE8tVzA2LTN1bHY2U0ZvVDVRZVhGbmIzRXVMWHBfazFCdGw5c3J2ZkhlSDNZeTZWcHBlOTVNaVRUVjFwb3c0MUE?oc=5",
+      "summary": "“読書×旅”で長崎の魅力を発見！ 「長崎ゆかりの作品フェア」 東京・福岡で開催 共同通信PRワイヤー",
+      "source": "共同通信PRワイヤー",
+      "date": "2025/10/03",
       "tag": "ニュース",
       "score": 1
     },
