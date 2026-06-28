@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>湊の中学校えらび</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.6.0/tabler-icons.min.css">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html, body {
@@ -141,6 +142,13 @@
     .kid-card h3 { font-size: 14px; font-weight: 700; margin-bottom: 6px; }
     .kid-card p { font-size: 13px; color: #c7cad3; }
 
+    .hp-link {
+      display: inline-flex; align-items: center; gap: 6px; margin-top: 10px;
+      font-size: 12px; font-weight: 700; color: #14161c; background: var(--sc, #5c9dff);
+      padding: 6px 14px; border-radius: 999px; text-decoration: none;
+    }
+    .hp-link:hover { opacity: 0.85; text-decoration: none; }
+
     /* ── FAQ ── */
     .faq-item { margin-bottom: 18px; }
     .faq-q { font-size: 14px; font-weight: 700; color: #f3f1ec; margin-bottom: 4px; }
@@ -150,6 +158,11 @@
 
     footer { text-align: center; padding: 40px 20px 0; font-size: 11px; color: #4d5160; }
     footer .note { color: #6b6f7b; font-size: 10px; margin-top: 8px; }
+
+    .section h2 .ti, .card h3 .ti, .profile h2 .ti, .kid-section h2 .ti, .kid-card h3 .ti, h1 .ti {
+      font-size: 1.2em; vertical-align: -0.1em; margin-right: 6px;
+    }
+    .section h2 { display: flex; align-items: center; gap: 8px; }
 
     @media (max-width: 480px) {
       .page { padding: 0 16px 60px; }
@@ -164,7 +177,7 @@
 
   <header>
     <a href="index.html" class="back-link">← Day Boost に戻る</a>
-    <h1>湊の中学校えらび</h1>
+    <h1><i class="ti ti-rocket" style="color:#ff5c7a"></i> 湊の中学校えらび</h1>
     <div class="subtitle">理科が好き × 国語が得意 — どの道が一番合う？</div>
   </header>
 
@@ -172,7 +185,7 @@
   <!-- PROFILE -->
   <!-- ════════════════════════════════════════ -->
   <div class="profile">
-    <h2>湊くんのプロフィール</h2>
+    <h2><i class="ti ti-user-star" style="color:#ffd166"></i> 湊くんのプロフィール</h2>
     <dl class="profile-grid">
       <dt>学年</dt><dd>小学4年生</dd>
       <dt>住まい</dt><dd>八丁畷駅（川崎市川崎区）</dd>
@@ -236,10 +249,10 @@
   <!-- KEY INSIGHT -->
   <!-- ════════════════════════════════════════ -->
   <div class="section">
-    <h2>成績から見えること</h2>
+    <h2><i class="ti ti-chart-bar" style="color:#5c9dff"></i> 成績から見えること</h2>
 
     <div class="card" style="--ac: #5c9dff">
-      <h3>国語力が最大の武器</h3>
+      <h3><i class="ti ti-sword" style="color:#5c9dff"></i> 国語力が最大の武器</h3>
       <ul>
         <li>偏差値59.9は日能研生の中でも上位層。読書・作文好きと完全に一致</li>
         <li>2科（国算）偏差値56.1 と 4科偏差値51.5 の差が大きい → <strong>国語が全体を引き上げている</strong></li>
@@ -248,7 +261,7 @@
     </div>
 
     <div class="card" style="--ac: #4ce0a0">
-      <h3>理科 — 好きだけど偏差値はまだこれから</h3>
+      <h3><i class="ti ti-flask" style="color:#4ce0a0"></i> 理科 — 好きだけど偏差値はまだこれから</h3>
       <ul>
         <li>公開模試の偏差値は46.2だが、春期講習テストでは<strong>評価8（最高水準）</strong></li>
         <li>興味はあるが、テスト形式の知識問題ではまだ点が取り切れていない</li>
@@ -258,7 +271,7 @@
     </div>
 
     <div class="card" style="--ac: #ff5c7a">
-      <h3>算数が負担の中心になっている</h3>
+      <h3><i class="ti ti-alert-triangle" style="color:#ff5c7a"></i> 算数が負担の中心になっている</h3>
       <ul>
         <li>偏差値51.1は「できない」わけではないが、本人が嫌い → 塾のストレスの大部分がここ</li>
         <li>私立4科受験は算数の比重が非常に大きい（配点150点の学校も多い）</li>
@@ -272,11 +285,11 @@
   <!-- 3 ROUTES -->
   <!-- ════════════════════════════════════════ -->
   <div class="section">
-    <h2>3つの進路 — 湊くんに合うのはどれ？</h2>
+    <h2><i class="ti ti-map-2" style="color:#4ce0a0"></i> 3つの進路 — 湊くんに合うのはどれ？</h2>
 
     <!-- Route A: 公立中高一貫 -->
     <div class="card" style="--ac: #4ce0a0">
-      <h3>A. 公立中高一貫校<span class="rec-badge" style="background:#4ce0a0">湊くんの強みが最も活きる</span></h3>
+      <h3><i class="ti ti-star" style="color:#4ce0a0"></i> A. 公立中高一貫校<span class="rec-badge" style="background:#4ce0a0">湊くんの強みが最も活きる</span></h3>
       <div class="tag-row">
         <span class="tag green">適性検査＝国語力で戦える</span>
         <span class="tag green">学費は公立と同じ</span>
@@ -296,7 +309,7 @@
 
     <!-- Route B: 私立 -->
     <div class="card" style="--ac: #5c9dff">
-      <h3>B. 私立中学</h3>
+      <h3><i class="ti ti-building" style="color:#5c9dff"></i> B. 私立中学</h3>
       <div class="tag-row">
         <span class="tag blue">理科設備が充実</span>
         <span class="tag blue">学校の選択肢が多い</span>
@@ -314,7 +327,7 @@
 
     <!-- Route C: 公立 -->
     <div class="card" style="--ac: #ffd166">
-      <h3>C. 地元の公立中学 → 高校受験</h3>
+      <h3><i class="ti ti-home" style="color:#ffd166"></i> C. 地元の公立中学 → 高校受験</h3>
       <div class="tag-row">
         <span class="tag green">受験ストレスから完全解放</span>
         <span class="tag green">費用最小</span>
@@ -337,7 +350,7 @@
   <!-- COMPARISON TABLE -->
   <!-- ════════════════════════════════════════ -->
   <div class="section">
-    <h2>一覧で比較する</h2>
+    <h2><i class="ti ti-table" style="color:#c49bff"></i> 一覧で比較する</h2>
     <div class="cmp-wrap">
       <table class="cmp-table">
         <thead>
@@ -412,7 +425,7 @@
   <!-- SCHOOL LIST -->
   <!-- ════════════════════════════════════════ -->
   <div class="section">
-    <h2>候補校ピックアップ（八丁畷から45分以内）</h2>
+    <h2><i class="ti ti-school" style="color:#ff5c7a"></i> 候補校ピックアップ（八丁畷から45分以内）</h2>
     <p>湊くんの偏差値帯・通学圏・理科への興味に合う学校を厳選しました。</p>
 
     <!-- ── 公立中高一貫 ── -->
@@ -443,6 +456,7 @@
         <dt>入試</dt><dd>適性検査（読解・記述・思考力）＋面接</dd>
         <dt>学費</dt><dd>公立と同じ（年間約10〜15万円）</dd>
       </dl>
+      <a class="hp-link" href="https://www.kaw-s.ed.jp/jh-school/" target="_blank" rel="noopener"><i class="ti ti-external-link"></i> 学校公式サイト</a>
     </div>
 
     <div class="card" style="--ac: #ff5c7a; margin-top: 14px;">
@@ -474,6 +488,7 @@
         <dt>通学</dt><dd>八丁畷→（南武線）→武蔵小杉→徒歩15分 約30分</dd>
         <dt>学費</dt><dd>年間 約100万円＋入学金 約30万円</dd>
       </dl>
+      <a class="hp-link" href="https://www.hosei2.ed.jp/" target="_blank" rel="noopener"><i class="ti ti-external-link"></i> 学校公式サイト</a>
     </div>
 
     <div class="school-card" style="--sc: #5c9dff">
@@ -496,6 +511,7 @@
         <dt>通学</dt><dd>八丁畷→武蔵小杉→（東横線）→日吉→徒歩 約30分</dd>
         <dt>学費</dt><dd>年間 約90万円＋入学金 約25万円</dd>
       </dl>
+      <a class="hp-link" href="https://www.yokohama.hs.nihon-u.ac.jp/" target="_blank" rel="noopener"><i class="ti ti-external-link"></i> 学校公式サイト</a>
     </div>
 
     <div class="school-card" style="--sc: #5c9dff">
@@ -518,6 +534,7 @@
         <dt>通学</dt><dd>八丁畷→横浜→（京急）→黄金町→徒歩 約40〜45分</dd>
         <dt>学費</dt><dd>年間 約85万円＋入学金 約25万円</dd>
       </dl>
+      <a class="hp-link" href="https://kantogakuin.ed.jp/" target="_blank" rel="noopener"><i class="ti ti-external-link"></i> 学校公式サイト</a>
     </div>
 
     <div class="school-card" style="--sc: #5c9dff">
@@ -540,6 +557,7 @@
         <dt>通学</dt><dd>八丁畷→（京急）→京急鶴見→徒歩 約15分</dd>
         <dt>学費</dt><dd>年間 約75万円＋入学金 約20万円</dd>
       </dl>
+      <a class="hp-link" href="https://tsurumi-fuzoku.ed.jp/" target="_blank" rel="noopener"><i class="ti ti-external-link"></i> 学校公式サイト</a>
     </div>
 
     <!-- ── 公立ルート ── -->
@@ -574,7 +592,7 @@
   <!-- COST -->
   <!-- ════════════════════════════════════════ -->
   <div class="section">
-    <h2>6年間のトータル費用イメージ</h2>
+    <h2><i class="ti ti-coin" style="color:#ffd166"></i> 6年間のトータル費用イメージ</h2>
     <p>中学入学〜高校卒業まで（塾代・交通費込みの概算）</p>
 
     <div style="margin-top:16px;">
@@ -604,10 +622,10 @@
   <!-- DECISION HINTS -->
   <!-- ════════════════════════════════════════ -->
   <div class="section">
-    <h2>判断のヒント</h2>
+    <h2><i class="ti ti-bulb" style="color:#ffd166"></i> 判断のヒント</h2>
 
     <div class="card" style="--ac: #4ce0a0">
-      <h3>湊くんに一番おすすめできるルートは？</h3>
+      <h3><i class="ti ti-target-arrow" style="color:#4ce0a0"></i> 湊くんに一番おすすめできるルートは？</h3>
       <p style="margin-bottom:10px;">成績データと性格を総合すると：</p>
       <p><strong style="color:#4ce0a0; font-size:15px;">「川崎市立川崎高附属中を第一志望に、適性検査対策に切り替える」</strong></p>
       <ul style="margin-top:10px;">
@@ -623,7 +641,7 @@
     </div>
 
     <div class="card" style="--ac: #ff5c7a">
-      <h3>「塾がつらい」への向き合い方</h3>
+      <h3><i class="ti ti-heart-handshake" style="color:#ff5c7a"></i> 「塾がつらい」への向き合い方</h3>
       <ul>
         <li><strong>テストが多い → </strong>日能研の4科テスト量が合っていない可能性。適性検査対策に切り替えれば、テストの質が変わる</li>
         <li><strong>算数が嫌い → </strong>私立4科型を続ける限り、算数の負荷は増え続ける。適性検査型なら算数は「考えを書く」スタイルで、湊くんの国語力でアプローチできる</li>
@@ -633,7 +651,7 @@
     </div>
 
     <div class="card" style="--ac: #ffd166">
-      <h3>親として考えておきたいこと</h3>
+      <h3><i class="ti ti-users" style="color:#ffd166"></i> 親として考えておきたいこと</h3>
       <ul>
         <li>真面目だが忍耐力は控えめ → <strong>面倒見のよい学校</strong>の方が安心。放任型の進学校よりサポートがある環境が合う</li>
         <li>きょうだいの受験も未定 → 二人分の教育費を見据えると、公立中高一貫は経済的なメリットが大きい</li>
@@ -643,7 +661,7 @@
     </div>
 
     <div class="card" style="--ac: #c49bff">
-      <h3>テストを休んでもいいの？</h3>
+      <h3><i class="ti ti-calendar-off" style="color:#c49bff"></i> テストを休んでもいいの？</h3>
       <p style="margin-bottom:10px;"><strong style="color:#4ce0a0">休んでも大丈夫です。</strong> 日能研の育成テスト・公開模試は「受けなければ退塾」というものではありません。実際にテストを間引いている家庭は珍しくありません。</p>
       <p style="margin-bottom:10px;">ただ大事なのは、<strong>「テストが嫌」の本当の理由</strong>を見極めること：</p>
       <ul>
@@ -656,7 +674,7 @@
     </div>
 
     <div class="card" style="--ac: #ff9f5c">
-      <h3>湊くんのメンタルケア — 親ができること</h3>
+      <h3><i class="ti ti-shield-heart" style="color:#ff9f5c"></i> 湊くんのメンタルケア — 親ができること</h3>
       <ul>
         <li><strong>「逃げ」ではなく「選択」だと伝える</strong> → 「塾やめたい＝弱い」ではない。「自分に合うやり方を探している」と言い換えてあげる。真面目な子は「やめたい」を言い出すまでに相当我慢しているはず</li>
         <li><strong>国語の強さを明確に褒める</strong> → 偏差値60は本当にすごいこと。塾では算数が王様なので、本人が「自分はできない子」と思い込んでいる可能性がある。「国語ができるのは、ものを考える力がある証拠。それが一番大事」と伝える</li>
@@ -671,7 +689,7 @@
   <!-- SCHEDULE -->
   <!-- ════════════════════════════════════════ -->
   <div class="section">
-    <h2>これからのスケジュール</h2>
+    <h2><i class="ti ti-calendar-event" style="color:#4ce0a0"></i> これからのスケジュール</h2>
     <div class="timeline">
       <div class="tl-item" style="--tc: #ffd166">
         <div class="tl-time">今すぐ〜夏休み前</div>
@@ -700,11 +718,11 @@
   <!-- FOR KID -->
   <!-- ════════════════════════════════════════ -->
   <div class="kid-section">
-    <h2>湊くんに読んでほしいページ</h2>
+    <h2><i class="ti ti-message-heart" style="color:#ff5c7a"></i> 湊くんに読んでほしいページ</h2>
     <p style="font-size:13px; color:#9fa3ad; margin-bottom:16px;">ここから先は、湊くん自身に読んでもらうために書いた内容です。</p>
 
     <div class="kid-card" style="--kc: #5c9dff">
-      <h3>湊くん、理科が好きなんだよね？</h3>
+      <h3><i class="ti ti-microscope" style="color:#5c9dff"></i> 湊くん、理科が好きなんだよね？</h3>
       <p>
         実験とか、化学とか、物理のしくみを調べるのが好き。それってすごく大事な気持ちだよ。<br>
         中学校には、その「好き」をもっと深められる場所がある。学校によって、どれだけ理科をやれるかが全然ちがうんだ。
@@ -712,7 +730,7 @@
     </div>
 
     <div class="kid-card" style="--kc: #4ce0a0">
-      <h3>中学校には3つの道がある</h3>
+      <h3><i class="ti ti-road-sign" style="color:#4ce0a0"></i> 中学校には3つの道がある</h3>
       <p>
         <strong style="color:#4ce0a0">1. 探究型の中学校に挑戦する</strong><br>
         「川崎市立川崎高附属中」っていう学校がある。ここは6年間通えて、「探究」っていう、自分でテーマを決めて調べたり実験したりする特別な授業がある。入るにはテストがあるけど、算数の計算スピードを競うタイプじゃなくて、<strong>文章を読んで、自分の考えを書く</strong>テスト。国語が得意な湊くんには向いてると思う。家からも近いよ。
@@ -728,7 +746,7 @@
     </div>
 
     <div class="kid-card" style="--kc: #ff9f5c">
-      <h3>テストがいやだって思うこと</h3>
+      <h3><i class="ti ti-mood-smile" style="color:#ff9f5c"></i> テストがいやだって思うこと</h3>
       <p>
         テストがいやだなって思うのは、ぜんぜんおかしいことじゃない。大人でも、毎週テストがあったらいやだよ。<br><br>
         でも知ってほしいのは、<strong>湊くんの国語の力はすごい</strong>ってこと。偏差値59.9って、塾の中でもかなり上の方。文章を読んで理解する力、自分の考えを書く力がしっかりあるってことだよ。<br><br>
@@ -738,7 +756,7 @@
     </div>
 
     <div class="kid-card" style="--kc: #ffd166">
-      <h3>どの道でも、理科はできる</h3>
+      <h3><i class="ti ti-sparkles" style="color:#ffd166"></i> どの道でも、理科はできる</h3>
       <p>
         大事なのは、<strong>「理科をもっとやりたい」っていう気持ち</strong>。それさえあれば、どの道を選んでも理科を続けられる。<br><br>
         塾がつらいと感じてるなら、それはちゃんと伝えていいこと。「やめたい」って言うのは弱いことじゃなくて、<strong>自分に合うやり方を探してるってこと</strong>。つらいのをガマンし続けるより、そっちのほうがずっと大事。<br><br>
@@ -752,7 +770,7 @@
   <!-- FAQ -->
   <!-- ════════════════════════════════════════ -->
   <div class="section">
-    <h2>よくある疑問</h2>
+    <h2><i class="ti ti-help-circle" style="color:#5c9dff"></i> よくある疑問</h2>
 
     <div class="faq-item">
       <div class="faq-q">適性検査の対策は、今の日能研でできる？</div>
@@ -799,9 +817,9 @@
   <!-- NEXT ACTION -->
   <!-- ════════════════════════════════════════ -->
   <div class="section">
-    <h2>次にやること</h2>
+    <h2><i class="ti ti-checklist" style="color:#4ce0a0"></i> 次にやること</h2>
     <div class="card" style="--ac: #4ce0a0">
-      <h3>まず動ける3つのアクション</h3>
+      <h3><i class="ti ti-run" style="color:#4ce0a0"></i> まず動ける3つのアクション</h3>
       <ul>
         <li><strong>川崎市立川崎高附属中</strong>の学校説明会・体験授業の日程を調べる</li>
         <li>湊くんと一緒にこのページの「湊くんに読んでほしいページ」を見て、本人の気持ちを聞く</li>
