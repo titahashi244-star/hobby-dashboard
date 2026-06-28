@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>中学校えらび — 理科が好きな子のための学校比較</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      font-family: 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+      background: #14161c;
+      color: #f3f1ec;
+      line-height: 1.8;
+    }
+    a { color: #5c9dff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .page { max-width: 720px; margin: 0 auto; padding: 0 20px 80px; }
+
+    /* ── header ── */
+    header { padding: 32px 0 24px; }
+    .back-link { font-size: 13px; color: #8b8f9b; margin-bottom: 12px; display: inline-block; }
+    .back-link:hover { color: #f3f1ec; }
+    h1 { font-size: 26px; font-weight: 800; letter-spacing: -0.01em; }
+    .subtitle { font-size: 14px; color: #9fa3ad; margin-top: 6px; }
+
+    /* ── situation card ── */
+    .situation {
+      background: #1c1f27; border-radius: 16px; padding: 22px 24px; margin-top: 24px;
+      border-left: 4px solid #ffd166;
+    }
+    .situation h2 { font-size: 15px; font-weight: 700; color: #ffd166; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+    .situation ul { list-style: none; font-size: 14px; color: #c7cad3; }
+    .situation li { padding: 3px 0; }
+    .situation li::before { content: '▸ '; color: #ffd166; }
+
+    /* ── section ── */
+    .section { margin-top: 36px; }
+    .section h2 {
+      font-size: 18px; font-weight: 800; margin-bottom: 16px; padding-bottom: 10px;
+      border-bottom: 1px solid #2c3140;
+    }
+
+    /* ── 3-type comparison ── */
+    .type-grid { display: flex; flex-direction: column; gap: 14px; }
+    .type-card {
+      background: #1c1f27; border-radius: 16px; padding: 20px 22px;
+      border-left: 4px solid var(--tc);
+    }
+    .type-card h3 { font-size: 16px; font-weight: 700; color: var(--tc); margin-bottom: 8px; }
+    .type-card .tag-row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+    .tag {
+      font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 999px;
+      background: #262a34; color: #c7cad3; border: 1px solid #323845;
+    }
+    .tag.pro { background: rgba(76,224,160,0.12); color: #4ce0a0; border-color: rgba(76,224,160,0.25); }
+    .tag.con { background: rgba(255,92,122,0.12); color: #ff5c7a; border-color: rgba(255,92,122,0.25); }
+    .type-card p { font-size: 13px; color: #9fa3ad; }
+    .type-card .detail-grid {
+      display: grid; grid-template-columns: auto 1fr; gap: 4px 14px;
+      font-size: 13px; margin-top: 10px;
+    }
+    .detail-grid dt { color: #8b8f9b; font-weight: 700; white-space: nowrap; }
+    .detail-grid dd { color: #c7cad3; }
+
+    /* ── comparison table ── */
+    .cmp-table-wrap { overflow-x: auto; margin-top: 16px; -webkit-overflow-scrolling: touch; }
+    .cmp-table {
+      width: 100%; border-collapse: collapse; font-size: 13px; min-width: 520px;
+    }
+    .cmp-table th, .cmp-table td {
+      padding: 10px 12px; text-align: left; border-bottom: 1px solid #2c3140;
+    }
+    .cmp-table th { color: #8b8f9b; font-weight: 700; font-size: 12px; white-space: nowrap; }
+    .cmp-table thead th { background: #1a1c22; position: sticky; top: 0; }
+    .cmp-table tbody tr:hover { background: #1f232c; }
+    .cmp-table td:first-child { font-weight: 700; white-space: nowrap; }
+    .col-private { color: #5c9dff; }
+    .col-public-ik { color: #4ce0a0; }
+    .col-public { color: #ffd166; }
+    .highlight { color: #4ce0a0; font-weight: 700; }
+
+    /* ── school cards ── */
+    .school-list { display: flex; flex-direction: column; gap: 14px; }
+    .school-card {
+      background: #1c1f27; border-radius: 14px; padding: 18px 20px;
+      border-left: 4px solid var(--sc);
+    }
+    .school-card h3 { font-size: 15px; font-weight: 700; margin-bottom: 2px; }
+    .school-card .school-type { font-size: 12px; font-weight: 700; color: var(--sc); margin-bottom: 8px; }
+    .school-card .school-desc { font-size: 13px; color: #9fa3ad; margin-bottom: 10px; }
+    .school-card .school-meta { display: flex; flex-wrap: wrap; gap: 6px; }
+
+    /* ── decision framework ── */
+    .decision-card {
+      background: #1c1f27; border-radius: 16px; padding: 20px 22px; margin-top: 14px;
+    }
+    .decision-card h3 { font-size: 15px; font-weight: 700; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+    .decision-card ul { list-style: none; font-size: 13px; color: #c7cad3; }
+    .decision-card li { padding: 4px 0; padding-left: 20px; position: relative; }
+    .decision-card li::before { content: '✓'; position: absolute; left: 0; color: #4ce0a0; font-weight: 700; }
+
+    /* ── cost ── */
+    .cost-bar-wrap { margin-top: 12px; }
+    .cost-row { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; font-size: 13px; }
+    .cost-label { width: 100px; flex-shrink: 0; color: #c7cad3; font-weight: 700; font-size: 12px; }
+    .cost-bar-bg { flex: 1; height: 22px; background: #262a34; border-radius: 6px; overflow: hidden; position: relative; }
+    .cost-bar { height: 100%; border-radius: 6px; display: flex; align-items: center; justify-content: flex-end; padding-right: 8px; font-size: 11px; font-weight: 700; color: #14161c; }
+    .cost-note { font-size: 12px; color: #6b6f7b; margin-top: 6px; }
+
+    /* ── timeline ── */
+    .timeline { margin-top: 16px; position: relative; padding-left: 24px; }
+    .timeline::before {
+      content: ''; position: absolute; left: 7px; top: 4px; bottom: 4px;
+      width: 2px; background: #2c3140;
+    }
+    .tl-item { position: relative; margin-bottom: 18px; }
+    .tl-item::before {
+      content: ''; position: absolute; left: -20px; top: 7px;
+      width: 10px; height: 10px; border-radius: 50%; background: var(--tc, #5c9dff); border: 2px solid #14161c;
+    }
+    .tl-item .tl-time { font-size: 12px; font-weight: 700; color: var(--tc, #5c9dff); }
+    .tl-item .tl-text { font-size: 13px; color: #c7cad3; }
+
+    /* ── FAQ ── */
+    .faq-item { margin-bottom: 18px; }
+    .faq-q { font-size: 14px; font-weight: 700; color: #f3f1ec; margin-bottom: 4px; }
+    .faq-q::before { content: 'Q. '; color: #5c9dff; }
+    .faq-a { font-size: 13px; color: #9fa3ad; padding-left: 24px; }
+    .faq-a::before { content: 'A. '; color: #4ce0a0; font-weight: 700; }
+
+    footer { text-align: center; padding: 40px 20px 0; font-size: 11px; color: #4d5160; }
+
+    @media (max-width: 480px) {
+      .page { padding: 0 16px 60px; }
+      h1 { font-size: 22px; }
+      .type-card, .school-card, .decision-card, .situation { padding: 16px 18px; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <a href="index.html" class="back-link">← Day Boost に戻る</a>
+    <h1>中学校えらび</h1>
+    <div class="subtitle">理科が好きな子のための学校比較 — 川崎・横浜エリア</div>
+  </header>
+
+  <!-- ── いまの状況 ── -->
+  <div class="situation">
+    <h2>📌 いまの状況</h2>
+    <ul>
+      <li>私立受験を想定して塾に通っている</li>
+      <li>本人は塾通いをいやがっている</li>
+      <li>受験するかどうか、まだ決めきれていない</li>
+      <li>学校ごとの違いが見えにくいのが課題</li>
+      <li>本人は<strong style="color:#4ce0a0">理科を学びたい</strong>という希望がある</li>
+    </ul>
+  </div>
+
+  <!-- ── 3タイプ比較 ── -->
+  <div class="section">
+    <h2>3つの進路タイプ</h2>
+
+    <div class="type-grid">
+      <!-- 私立中学 -->
+      <div class="type-card" style="--tc: #5c9dff">
+        <h3>私立中学</h3>
+        <div class="tag-row">
+          <span class="tag pro">理科設備が充実</span>
+          <span class="tag pro">6年一貫カリキュラム</span>
+          <span class="tag con">学費が高い</span>
+          <span class="tag con">入試対策が必要</span>
+        </div>
+        <dl class="detail-grid">
+          <dt>入試</dt><dd>4科目（国算理社）が主流、2科目校もあり</dd>
+          <dt>学費</dt><dd>年間 約80〜120万円（入学金別途20〜30万円）</dd>
+          <dt>塾</dt><dd>小4〜6で通塾が一般的（月3〜5万円）</dd>
+          <dt>理科の特徴</dt><dd>実験室・専門教員が充実、探究型授業を導入する学校が増加</dd>
+          <dt>通学</dt><dd>電車通学が多い（片道30分〜1時間）</dd>
+        </dl>
+      </div>
+
+      <!-- 公立中高一貫 -->
+      <div class="type-card" style="--tc: #4ce0a0">
+        <h3>公立中高一貫校</h3>
+        <div class="tag-row">
+          <span class="tag pro">学費は公立と同じ</span>
+          <span class="tag pro">適性検査型（暗記より思考力）</span>
+          <span class="tag con">倍率が非常に高い</span>
+          <span class="tag con">学校数が少ない</span>
+        </div>
+        <dl class="detail-grid">
+          <dt>入試</dt><dd>適性検査（教科横断型の思考問題）＋作文・面接など</dd>
+          <dt>学費</dt><dd>公立と同じ（年間 約10〜15万円程度）</dd>
+          <dt>塾</dt><dd>適性検査対策が中心（私立塾ほどハードではない場合も）</dd>
+          <dt>理科の特徴</dt><dd>サイエンスフロンティアのように理数特化校もある</dd>
+          <dt>倍率</dt><dd>5〜7倍が一般的、不合格時は地元公立中へ</dd>
+        </dl>
+      </div>
+
+      <!-- 公立中学 -->
+      <div class="type-card" style="--tc: #ffd166">
+        <h3>公立中学（地元）</h3>
+        <div class="tag-row">
+          <span class="tag pro">費用が最も安い</span>
+          <span class="tag pro">通学が楽・友達と一緒</span>
+          <span class="tag pro">受験ストレスなし</span>
+          <span class="tag con">高校受験は必要</span>
+          <span class="tag con">理科の設備は学校次第</span>
+        </div>
+        <dl class="detail-grid">
+          <dt>入試</dt><dd>なし（学区制で進学）</dd>
+          <dt>学費</dt><dd>授業料無料（給食費・教材費等で年間 約5〜10万円）</dd>
+          <dt>塾</dt><dd>中学から高校受験向けに通う場合が多い</dd>
+          <dt>理科の特徴</dt><dd>カリキュラムは学習指導要領に準拠。科学部の活動で深められる学校も</dd>
+          <dt>高校受験</dt><dd>内申点＋入試。理科好きなら高校で理数科・SSH校を目指せる</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 比較表 ── -->
+  <div class="section">
+    <h2>一覧で比較する</h2>
+    <div class="cmp-table-wrap">
+      <table class="cmp-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th class="col-private">私立中学</th>
+            <th class="col-public-ik">公立中高一貫</th>
+            <th class="col-public">公立中学</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>入試の有無</td>
+            <td>あり（4教科型が主流）</td>
+            <td>あり（適性検査型）</td>
+            <td>なし</td>
+          </tr>
+          <tr>
+            <td>塾の負荷</td>
+            <td>高い（小4〜6）</td>
+            <td>中程度</td>
+            <td>なし → 中学から</td>
+          </tr>
+          <tr>
+            <td>6年間の学費目安</td>
+            <td>約500〜700万円</td>
+            <td>約60〜90万円</td>
+            <td>約30〜60万円</td>
+          </tr>
+          <tr>
+            <td>理科の環境</td>
+            <td class="highlight">◎ 充実</td>
+            <td class="highlight">◎〜○ 学校による</td>
+            <td>△〜○ 学校による</td>
+          </tr>
+          <tr>
+            <td>高校受験</td>
+            <td>不要（中高一貫）</td>
+            <td>不要（中高一貫）</td>
+            <td>必要</td>
+          </tr>
+          <tr>
+            <td>多様な友人関係</td>
+            <td>○ 学力帯が近い</td>
+            <td>○ 学力帯が近い</td>
+            <td class="highlight">◎ さまざまな子</td>
+          </tr>
+          <tr>
+            <td>通学の楽さ</td>
+            <td>△ 電車通学</td>
+            <td>△〜○</td>
+            <td class="highlight">◎ 徒歩圏</td>
+          </tr>
+          <tr>
+            <td>不合格時のリスク</td>
+            <td>併願校 or 公立</td>
+            <td>地元公立中</td>
+            <td>—</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ── 理科に強い学校 ── -->
+  <div class="section">
+    <h2>理科に強い学校ピックアップ（川崎・横浜近辺）</h2>
+
+    <div class="school-list">
+
+      <div class="school-card" style="--sc: #4ce0a0">
+        <h3>横浜市立横浜サイエンスフロンティア高附属中</h3>
+        <div class="school-type">公立中高一貫（横浜市鶴見区）</div>
+        <div class="school-desc">
+          「サイエンスの力で未来を切り拓く」を掲げた理数特化校。全生徒が課題研究に取り組み、大学・企業との連携プログラムも充実。先端科学の実験設備は私立にも引けを取らない。鶴見区にあり、自宅から近い可能性が高い。
+        </div>
+        <div class="school-meta">
+          <span class="tag pro">理数特化</span>
+          <span class="tag pro">鶴見区所在</span>
+          <span class="tag">倍率 約5〜6倍</span>
+          <span class="tag">適性検査型</span>
+        </div>
+      </div>
+
+      <div class="school-card" style="--sc: #4ce0a0">
+        <h3>川崎市立川崎高附属中</h3>
+        <div class="school-type">公立中高一貫（川崎市川崎区）</div>
+        <div class="school-desc">
+          川崎市唯一の公立中高一貫校。探究学習「かわさき探究」を柱に、理科を含む教科横断型の学びを重視。生活科学科もあり、実験・ものづくりが好きな子に向いている。
+        </div>
+        <div class="school-meta">
+          <span class="tag pro">川崎市内</span>
+          <span class="tag pro">探究学習重視</span>
+          <span class="tag">倍率 約4〜5倍</span>
+          <span class="tag">適性検査型</span>
+        </div>
+      </div>
+
+      <div class="school-card" style="--sc: #5c9dff">
+        <h3>浅野中学校</h3>
+        <div class="school-type">私立（横浜市神奈川区）</div>
+        <div class="school-desc">
+          JR新子安駅近く、鶴見からもアクセスしやすい男子校。「九転十起」の校訓のもと、理科教育に伝統的に力を入れ、実験重視のカリキュラム。銅駝坂の広い敷地に理科棟が充実。
+        </div>
+        <div class="school-meta">
+          <span class="tag pro">理科実験が充実</span>
+          <span class="tag pro">鶴見から近い</span>
+          <span class="tag">男子校</span>
+          <span class="tag">偏差値帯 高め</span>
+        </div>
+      </div>
+
+      <div class="school-card" style="--sc: #5c9dff">
+        <h3>聖光学院中学校</h3>
+        <div class="school-type">私立（横浜市中区）</div>
+        <div class="school-desc">
+          神奈川県トップクラスの進学校。理系進学率が高く、物理・化学・生物の実験設備が非常に充実。SSH（スーパーサイエンスハイスクール）指定の実績もあり、研究発表の機会が多い。
+        </div>
+        <div class="school-meta">
+          <span class="tag pro">SSH実績</span>
+          <span class="tag pro">理系に強い</span>
+          <span class="tag">男子校</span>
+          <span class="tag">偏差値帯 最難関</span>
+        </div>
+      </div>
+
+      <div class="school-card" style="--sc: #5c9dff">
+        <h3>神奈川大学附属中学校</h3>
+        <div class="school-type">私立（横浜市緑区）</div>
+        <div class="school-desc">
+          共学で面倒見が良いと評判。理科は実験レポート重視で、中1から本格的な実験授業がある。「全国学芸サイエンスコンクール」で入賞実績も。難関すぎず、学びを楽しめる環境。
+        </div>
+        <div class="school-meta">
+          <span class="tag pro">共学</span>
+          <span class="tag pro">面倒見が良い</span>
+          <span class="tag pro">実験レポート重視</span>
+          <span class="tag">偏差値帯 中堅</span>
+        </div>
+      </div>
+
+      <div class="school-card" style="--sc: #5c9dff">
+        <h3>法政大学第二中学校</h3>
+        <div class="school-type">私立（川崎市中原区）</div>
+        <div class="school-desc">
+          法政大学への内部推薦があり、大学受験のプレッシャーが少ない中でじっくり学べる。共学化後、理系志望の生徒も増加。大学の研究室訪問や高大連携プログラムが特徴。
+        </div>
+        <div class="school-meta">
+          <span class="tag pro">大学附属（推薦あり）</span>
+          <span class="tag pro">共学</span>
+          <span class="tag pro">川崎市内</span>
+          <span class="tag">偏差値帯 中堅〜上位</span>
+        </div>
+      </div>
+
+      <div class="school-card" style="--sc: #ffd166">
+        <h3>地元の公立中学 ＋ 高校で理数科・SSH校を目指す</h3>
+        <div class="school-type">公立中学 → 高校受験ルート</div>
+        <div class="school-desc">
+          中学は地元公立に進み、高校受験で理科に強い学校を目指すルート。神奈川には柏陽高校（SSH）、横浜サイエンスフロンティア高校、多摩高校（SSH）などの選択肢がある。塾通いのストレスから解放され、中学3年間を自分のペースで過ごせる。科学部のある中学校を選べば、理科への興味を深められる。
+        </div>
+        <div class="school-meta">
+          <span class="tag pro">受験ストレスなし</span>
+          <span class="tag pro">費用最小</span>
+          <span class="tag">高校受験で巻き返し可能</span>
+          <span class="tag">SSH校という選択肢</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── 費用比較 ── -->
+  <div class="section">
+    <h2>6年間のトータル費用イメージ</h2>
+    <p style="font-size:13px; color:#8b8f9b; margin-bottom:4px;">中学入学〜高校卒業まで（塾代含む概算）</p>
+
+    <div class="cost-bar-wrap">
+      <div class="cost-row">
+        <div class="cost-label" style="color:#5c9dff">私立中学</div>
+        <div class="cost-bar-bg">
+          <div class="cost-bar" style="width:90%; background: linear-gradient(90deg, #3a7de0, #5c9dff);">700〜1,000万円</div>
+        </div>
+      </div>
+      <div class="cost-row">
+        <div class="cost-label" style="color:#4ce0a0">公立中高一貫</div>
+        <div class="cost-bar-bg">
+          <div class="cost-bar" style="width:28%; background: linear-gradient(90deg, #2eb87a, #4ce0a0);">200〜350万円</div>
+        </div>
+      </div>
+      <div class="cost-row">
+        <div class="cost-label" style="color:#ffd166">公立中→公立高</div>
+        <div class="cost-bar-bg">
+          <div class="cost-bar" style="width:22%; background: linear-gradient(90deg, #d4a843, #ffd166);">150〜300万円</div>
+        </div>
+      </div>
+    </div>
+    <div class="cost-note">※ 塾代・交通費・教材費込みの概算。私立は入学金・寄付金含む。家庭により大きく異なります。</div>
+  </div>
+
+  <!-- ── 判断のポイント ── -->
+  <div class="section">
+    <h2>判断のヒント</h2>
+
+    <div class="decision-card">
+      <h3>🔬 「理科をしっかり学びたい」を最優先するなら</h3>
+      <ul>
+        <li><strong>横浜サイエンスフロンティア附属中</strong>が最有力候補。公立なので学費は抑えられ、理数に特化した環境で学べる。鶴見区にあるのも大きい</li>
+        <li>ただし倍率が高いため、不合格の場合は地元公立中に進むことを前提に</li>
+        <li>適性検査型なので、私立受験型の塾とはアプローチが違う</li>
+      </ul>
+    </div>
+
+    <div class="decision-card">
+      <h3>😣 「塾がつらい」への向き合い方</h3>
+      <ul>
+        <li>塾が嫌な理由を具体的に聞いてみる（量が多い？つまらない？友達と遊べない？）</li>
+        <li>「受験をやめる＝負け」ではない。本人の学びたい気持ちを活かせるルートは複数ある</li>
+        <li>公立中高一貫の適性検査対策なら、私立向けよりも負荷が軽い場合がある</li>
+        <li>公立中に進んでも、高校受験でSSH校に進めば理科環境は十分に確保できる</li>
+      </ul>
+    </div>
+
+    <div class="decision-card">
+      <h3>📅 決断のタイミング</h3>
+      <ul>
+        <li>小5の夏〜秋ごろまでに方向性を決められるとベスト</li>
+        <li>小6に入ってからの転換も可能（私立→公立一貫に切り替える家庭もある）</li>
+        <li>学校説明会・文化祭に実際に足を運ぶと、本人の反応で判断しやすくなる</li>
+        <li>「理科が好き」を入り口に、見学先を絞ると効率的</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ── スケジュール ── -->
+  <div class="section">
+    <h2>これからのスケジュール目安</h2>
+    <div class="timeline">
+      <div class="tl-item" style="--tc: #ffd166">
+        <div class="tl-time">夏（7〜8月）</div>
+        <div class="tl-text">学校説明会・オープンスクールに参加。理科の授業体験があれば積極的に。本人の反応を観察</div>
+      </div>
+      <div class="tl-item" style="--tc: #ffd166">
+        <div class="tl-time">秋（9〜10月）</div>
+        <div class="tl-text">文化祭を見学（理科部の展示は学校の雰囲気がよくわかる）。方向性を家族で話し合い</div>
+      </div>
+      <div class="tl-item" style="--tc: #4ce0a0">
+        <div class="tl-time">秋〜冬</div>
+        <div class="tl-text">受験するかしないかの最終判断。する場合は志望校の過去問に触れてみる</div>
+      </div>
+      <div class="tl-item" style="--tc: #5c9dff">
+        <div class="tl-time">冬〜翌年2月</div>
+        <div class="tl-text">公立中高一貫は2月初旬、私立は2月1日〜に入試。公立中はそのまま進学</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── FAQ ── -->
+  <div class="section">
+    <h2>よくある疑問</h2>
+
+    <div class="faq-item">
+      <div class="faq-q">途中で受験をやめたら、塾でやったことは無駄になる？</div>
+      <div class="faq-a">無駄にはなりません。塾で身につけた学習習慣や思考力は、高校受験でも大きなアドバンテージになります。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">公立中から理系の道に進むのは不利？</div>
+      <div class="faq-a">不利ではありません。高校のSSH校（スーパーサイエンスハイスクール）は公立中からも十分目指せます。大学受験で最終的に並ぶケースも多いです。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">公立中高一貫の適性検査は、私立塾の勉強で対応できる？</div>
+      <div class="faq-a">出題傾向が違うため、専用対策が必要です。ただし、読解力・論理的思考力は共通して活きます。併願する場合は塾に相談を。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">本人がやる気がないのに受験させていいの？</div>
+      <div class="faq-a">「学びたいことがある学校に行くための受験」と「親が望む受験」では、意味が大きく異なります。理科への興味を起点に、本人が「この学校に行きたい」と思えるかどうかが鍵です。</div>
+    </div>
+  </div>
+
+  <footer>
+    中学校えらび — Day Boost<br>
+    <span style="color:#6b6f7b; font-size:10px;">※ 記載内容は一般的な情報であり、最新の募集要項・学費は各学校の公式サイトでご確認ください</span>
+  </footer>
+
+</div>
+</body>
+</html>
