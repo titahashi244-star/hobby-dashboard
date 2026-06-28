@@ -456,7 +456,7 @@
         <dt>入試</dt><dd>適性検査（読解・記述・思考力）＋面接</dd>
         <dt>学費</dt><dd>公立と同じ（年間約10〜15万円）</dd>
       </dl>
-      <a class="hp-link" href="https://www.kaw-s.ed.jp/jh-school/" target="_blank" rel="noopener"><i class="ti ti-external-link"></i> 学校公式サイト</a>
+      <a class="hp-link" href="https://www.kaw-s.ed.jp/jh-school/"><i class="ti ti-external-link"></i> 学校公式サイト</a>
     </div>
 
     <div class="card" style="--ac: #ff5c7a; margin-top: 14px;">
@@ -488,7 +488,7 @@
         <dt>通学</dt><dd>八丁畷→（南武線）→武蔵小杉→徒歩15分 約30分</dd>
         <dt>学費</dt><dd>年間 約100万円＋入学金 約30万円</dd>
       </dl>
-      <a class="hp-link" href="https://www.hosei2.ed.jp/" target="_blank" rel="noopener"><i class="ti ti-external-link"></i> 学校公式サイト</a>
+      <a class="hp-link" href="https://www.hosei2.ed.jp/"><i class="ti ti-external-link"></i> 学校公式サイト</a>
     </div>
 
     <div class="school-card" style="--sc: #5c9dff">
@@ -511,7 +511,7 @@
         <dt>通学</dt><dd>八丁畷→武蔵小杉→（東横線）→日吉→徒歩 約30分</dd>
         <dt>学費</dt><dd>年間 約90万円＋入学金 約25万円</dd>
       </dl>
-      <a class="hp-link" href="https://www.yokohama.hs.nihon-u.ac.jp/" target="_blank" rel="noopener"><i class="ti ti-external-link"></i> 学校公式サイト</a>
+      <a class="hp-link" href="https://www.yokohama.hs.nihon-u.ac.jp/"><i class="ti ti-external-link"></i> 学校公式サイト</a>
     </div>
 
     <div class="school-card" style="--sc: #5c9dff">
@@ -534,7 +534,7 @@
         <dt>通学</dt><dd>八丁畷→横浜→（京急）→黄金町→徒歩 約40〜45分</dd>
         <dt>学費</dt><dd>年間 約85万円＋入学金 約25万円</dd>
       </dl>
-      <a class="hp-link" href="https://kantogakuin.ed.jp/" target="_blank" rel="noopener"><i class="ti ti-external-link"></i> 学校公式サイト</a>
+      <a class="hp-link" href="https://kantogakuin.ed.jp/"><i class="ti ti-external-link"></i> 学校公式サイト</a>
     </div>
 
     <div class="school-card" style="--sc: #5c9dff">
@@ -557,7 +557,7 @@
         <dt>通学</dt><dd>八丁畷→（京急）→京急鶴見→徒歩 約15分</dd>
         <dt>学費</dt><dd>年間 約75万円＋入学金 約20万円</dd>
       </dl>
-      <a class="hp-link" href="https://tsurumi-fuzoku.ed.jp/" target="_blank" rel="noopener"><i class="ti ti-external-link"></i> 学校公式サイト</a>
+      <a class="hp-link" href="https://tsurumi-fuzoku.ed.jp/"><i class="ti ti-external-link"></i> 学校公式サイト</a>
     </div>
 
     <!-- ── 公立ルート ── -->
@@ -836,18 +836,15 @@
 
 </div>
 <script>
-// ホーム画面から開いた場合、外部リンクをSafariで開く
-if (window.navigator.standalone) {
-  document.addEventListener('click', function(e) {
-    var link = e.target.closest('a');
-    if (!link) return;
-    var href = link.getAttribute('href');
-    if (href && href.startsWith('http')) {
-      e.preventDefault();
-      window.location.href = href;
-    }
-  });
-}
+document.addEventListener('click', function(e) {
+  var link = e.target.closest('a.hp-link');
+  if (!link) return;
+  e.preventDefault();
+  var url = link.getAttribute('href');
+  // Safariで開く（iPadホーム画面アプリでも確実に外部ブラウザが開く）
+  var w = window.open(url, '_system');
+  if (!w) window.location.href = url;
+});
 </script>
 </body>
 </html>
