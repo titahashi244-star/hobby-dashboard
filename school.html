@@ -159,6 +159,28 @@
     .faq-a { font-size: 13px; color: #9fa3ad; padding-left: 24px; }
     .faq-a::before { content: 'A. '; color: #4ce0a0; font-weight: 700; }
 
+    /* ── school list ── */
+    .school-list { list-style: none; }
+    .school-list li {
+      display: flex; align-items: center; justify-content: space-between; gap: 10px;
+      padding: 12px 0; border-bottom: 1px solid #2c3140;
+    }
+    .school-list li:last-child { border-bottom: none; }
+    .sl-info { flex: 1; min-width: 0; }
+    .sl-name { font-size: 14px; font-weight: 700; color: #f3f1ec; }
+    .sl-meta { font-size: 11px; color: #6b6f7b; margin-top: 2px; }
+    .sl-link {
+      flex-shrink: 0; display: inline-flex; align-items: center; gap: 5px;
+      font-size: 11px; font-weight: 700; color: #14161c; background: #5c9dff;
+      padding: 5px 12px; border-radius: 999px; text-decoration: none;
+    }
+    .sl-link:hover { opacity: 0.85; text-decoration: none; }
+    .area-label {
+      font-size: 13px; font-weight: 800; color: #8b8f9b; margin: 18px 0 6px;
+      padding-bottom: 6px; border-bottom: 1px solid #323845; letter-spacing: 0.05em;
+    }
+    .area-label:first-child { margin-top: 0; }
+
     footer { text-align: center; padding: 40px 20px 0; font-size: 11px; color: #4d5160; }
     footer .note { color: #6b6f7b; font-size: 10px; margin-top: 8px; }
 
@@ -828,6 +850,155 @@
         <li>日能研の先生に「適性検査型への切り替え」について相談する（辞める前提でなく、選択肢として）</li>
       </ul>
     </div>
+  </div>
+
+  <!-- ════════════════════════════════════════ -->
+  <!-- MORE SCHOOLS LIST -->
+  <!-- ════════════════════════════════════════ -->
+  <div class="section">
+    <h2><i class="ti ti-list" style="color:#5c9dff"></i> 通学圏内のその他の学校</h2>
+    <p>八丁畷駅から約1時間以内で通える中学校です。上の5校以外にも検討候補になりえる学校をまとめました。</p>
+
+    <div class="area-label"><i class="ti ti-map-pin" style="color:#4ce0a0"></i> 神奈川エリア</div>
+    <ul class="school-list">
+      <li>
+        <div class="sl-info">
+          <div class="sl-name">浅野中学校</div>
+          <div class="sl-meta">横浜市神奈川区 ／ 男子校 ／ 理系に強い進学校</div>
+        </div>
+        <a href="https://www.asano.ed.jp/" class="sl-link hp-link"><i class="ti ti-external-link"></i>HP</a>
+      </li>
+      <li>
+        <div class="sl-info">
+          <div class="sl-name">聖光学院中学校</div>
+          <div class="sl-meta">横浜市中区 ／ 男子校 ／ 県内トップクラスの進学校</div>
+        </div>
+        <a href="https://www.seiko.ac.jp/" class="sl-link hp-link"><i class="ti ti-external-link"></i>HP</a>
+      </li>
+      <li>
+        <div class="sl-info">
+          <div class="sl-name">サレジオ学院中学校</div>
+          <div class="sl-meta">横浜市都筑区 ／ 男子校 ／ カトリック系・面倒見がよい</div>
+        </div>
+        <a href="https://www.salesio-gakuin.ed.jp/" class="sl-link hp-link"><i class="ti ti-external-link"></i>HP</a>
+      </li>
+      <li>
+        <div class="sl-info">
+          <div class="sl-name">神奈川大学附属中学校</div>
+          <div class="sl-meta">横浜市緑区 ／ 共学 ／ 広大なキャンパスで理科教育充実</div>
+        </div>
+        <a href="https://www.fhs.kanagawa-u.ac.jp/" class="sl-link hp-link"><i class="ti ti-external-link"></i>HP</a>
+      </li>
+      <li>
+        <div class="sl-info">
+          <div class="sl-name">中央大学附属横浜中学校</div>
+          <div class="sl-meta">横浜市都筑区 ／ 共学 ／ 中央大への内部進学あり</div>
+        </div>
+        <a href="https://www.yokohama-js.chuo-u.ac.jp/" class="sl-link hp-link"><i class="ti ti-external-link"></i>HP</a>
+      </li>
+      <li>
+        <div class="sl-info">
+          <div class="sl-name">山手学院中学校</div>
+          <div class="sl-meta">横浜市栄区 ／ 共学 ／ 国際交流プログラムが充実</div>
+        </div>
+        <a href="https://www.yamate-gakuin.ac.jp/" class="sl-link hp-link"><i class="ti ti-external-link"></i>HP</a>
+      </li>
+      <li>
+        <div class="sl-info">
+          <div class="sl-name">横浜創英中学校</div>
+          <div class="sl-meta">横浜市神奈川区 ／ 共学 ／ 工藤勇一校長の教育改革で注目</div>
+        </div>
+        <a href="https://www.soei.ed.jp/" class="sl-link hp-link"><i class="ti ti-external-link"></i>HP</a>
+      </li>
+      <li>
+        <div class="sl-info">
+          <div class="sl-name">桐蔭学園中等教育学校</div>
+          <div class="sl-meta">横浜市青葉区 ／ 共学 ／ アクティブラーニング重視</div>
+        </div>
+        <a href="https://toin.ac.jp/ses/" class="sl-link hp-link"><i class="ti ti-external-link"></i>HP</a>
+      </li>
+      <li>
+        <div class="sl-info">
+          <div class="sl-name">橘学苑中学校</div>
+          <div class="sl-meta">横浜市鶴見区 ／ 共学 ／ 少人数制・鶴見駅近</div>
+        </div>
+        <a href="https://www.tachibana.ac.jp/" class="sl-link hp-link"><i class="ti ti-external-link"></i>HP</a>
+      </li>
+    </ul>
+
+    <div class="area-label"><i class="ti ti-map-pin" style="color:#ff5c7a"></i> 東京エリア</div>
+    <ul class="school-list">
+      <li>
+        <div class="sl-info">
+          <div class="sl-name">芝中学校</div>
+          <div class="sl-meta">港区 ／ 男子校 ／ 自由な校風・理系に強い</div>
+        </div>
+        <a href="https://www.shiba.ac.jp/" class="sl-link hp-link"><i class="ti ti-external-link"></i>HP</a>
+      </li>
+      <li>
+        <div class="sl-info">
+          <div class="sl-name">高輪中学校</div>
+          <div class="sl-meta">港区 ／ 男子校 ／ 品川駅近・実験重視の理科教育</div>
+        </div>
+        <a href="https://www.takanawa.ed.jp/" class="sl-link hp-link"><i class="ti ti-external-link"></i>HP</a>
+      </li>
+      <li>
+        <div class="sl-info">
+          <div class="sl-name">攻玉社中学校</div>
+          <div class="sl-meta">品川区 ／ 男子校 ／ 理系教育に定評あり</div>
+        </div>
+        <a href="https://kogyokusha.ed.jp/" class="sl-link hp-link"><i class="ti ti-external-link"></i>HP</a>
+      </li>
+      <li>
+        <div class="sl-info">
+          <div class="sl-name">青稜中学校</div>
+          <div class="sl-meta">品川区 ／ 共学 ／ 理数系に力を入れた進学校</div>
+        </div>
+        <a href="https://www.seiryo-js.ed.jp/" class="sl-link hp-link"><i class="ti ti-external-link"></i>HP</a>
+      </li>
+      <li>
+        <div class="sl-info">
+          <div class="sl-name">品川翔英中学校</div>
+          <div class="sl-meta">品川区 ／ 共学 ／ 探究型学習・ICT活用</div>
+        </div>
+        <a href="https://www.shinagawa-shouei.ac.jp/jhhs/" class="sl-link hp-link"><i class="ti ti-external-link"></i>HP</a>
+      </li>
+      <li>
+        <div class="sl-info">
+          <div class="sl-name">文教大学付属中学校</div>
+          <div class="sl-meta">品川区 ／ 共学 ／ 少人数制・丁寧な指導</div>
+        </div>
+        <a href="https://www.bunkyo.ac.jp/jsh/" class="sl-link hp-link"><i class="ti ti-external-link"></i>HP</a>
+      </li>
+      <li>
+        <div class="sl-info">
+          <div class="sl-name">東海大学付属高輪台中等部</div>
+          <div class="sl-meta">港区 ／ 共学 ／ 東海大への内部進学あり</div>
+        </div>
+        <a href="https://www.takanawadai.tokai.ed.jp/" class="sl-link hp-link"><i class="ti ti-external-link"></i>HP</a>
+      </li>
+      <li>
+        <div class="sl-info">
+          <div class="sl-name">東京都市大学付属中学校</div>
+          <div class="sl-meta">世田谷区 ／ 男子校 ／ 理系教育が充実</div>
+        </div>
+        <a href="https://www.tcu-jsh.ed.jp/" class="sl-link hp-link"><i class="ti ti-external-link"></i>HP</a>
+      </li>
+      <li>
+        <div class="sl-info">
+          <div class="sl-name">東京都市大学等々力中学校</div>
+          <div class="sl-meta">世田谷区 ／ 共学 ／ noblesse oblige の教育理念</div>
+        </div>
+        <a href="https://www.tcu-todoroki.ed.jp/" class="sl-link hp-link"><i class="ti ti-external-link"></i>HP</a>
+      </li>
+      <li>
+        <div class="sl-info">
+          <div class="sl-name">かえつ有明中学校</div>
+          <div class="sl-meta">江東区 ／ 共学 ／ 探究型・帰国子女にも対応</div>
+        </div>
+        <a href="https://www.ariake.kaetsu.ac.jp/" class="sl-link hp-link"><i class="ti ti-external-link"></i>HP</a>
+      </li>
+    </ul>
   </div>
 
   <footer>
