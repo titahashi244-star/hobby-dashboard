@@ -835,5 +835,19 @@
   </footer>
 
 </div>
+<script>
+// ホーム画面から開いた場合、外部リンクをSafariで開く
+if (window.navigator.standalone) {
+  document.addEventListener('click', function(e) {
+    var link = e.target.closest('a');
+    if (!link) return;
+    var href = link.getAttribute('href');
+    if (href && href.startsWith('http')) {
+      e.preventDefault();
+      window.location.href = href;
+    }
+  });
+}
+</script>
 </body>
 </html>
