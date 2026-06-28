@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1e2e"/>
+      <stop offset="100%" stop-color="#14161c"/>
+    </linearGradient>
+    <linearGradient id="flask-fill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5c9dff" stop-opacity="0"/>
+      <stop offset="60%" stop-color="#5c9dff" stop-opacity="0"/>
+      <stop offset="60%" stop-color="#4ce0a0" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#4ce0a0" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="180" height="180" rx="40" fill="url(#bg)"/>
+  <!-- Glow -->
+  <circle cx="90" cy="95" r="50" fill="#4ce0a0" opacity="0.06"/>
+  <!-- Flask body -->
+  <path d="M75 50 L75 85 L55 120 Q50 130 58 137 L122 137 Q130 130 125 120 L105 85 L105 50"
+        fill="url(#flask-fill)" stroke="#4ce0a0" stroke-width="3.5" stroke-linejoin="round"/>
+  <!-- Flask top -->
+  <rect x="72" y="42" width="36" height="10" rx="3" fill="none" stroke="#4ce0a0" stroke-width="3.5"/>
+  <!-- Bubbles -->
+  <circle cx="80" cy="115" r="4" fill="#4ce0a0" opacity="0.6"/>
+  <circle cx="95" cy="108" r="3" fill="#5c9dff" opacity="0.7"/>
+  <circle cx="105" cy="120" r="2.5" fill="#ffd166" opacity="0.7"/>
+  <circle cx="88" cy="125" r="2" fill="#ff5c7a" opacity="0.6"/>
+  <!-- Sparkles -->
+  <g fill="#ffd166">
+    <polygon points="135,55 137,60 142,62 137,64 135,69 133,64 128,62 133,60" opacity="0.9"/>
+    <polygon points="48,65 49.5,68 53,69.5 49.5,71 48,74 46.5,71 43,69.5 46.5,68" opacity="0.7" transform="scale(0.8) translate(10,10)"/>
+    <polygon points="120,35 121.5,38 125,39.5 121.5,41 120,44 118.5,41 115,39.5 118.5,38" opacity="0.6"/>
+  </g>
+  <!-- Label -->
+  <text x="90" y="160" text-anchor="middle" font-family="Hiragino Sans,sans-serif" font-size="13" font-weight="800" fill="#f3f1ec" letter-spacing="0.05em">学校えらび</text>
+</svg>
