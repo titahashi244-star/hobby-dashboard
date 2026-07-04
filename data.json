@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/07/04 17:12",
+  "updated_at": "2026/07/04 17:14",
   "tennis": [
     {
       "title": "望月慎太郎が初の16強 松岡修造、錦織圭に続き日本男子3人目 ウィンブルドンテニス - 産経ニュース",
@@ -88,6 +88,15 @@
   ],
   "tech": [
     {
+      "title": "Cloudflare AIクローラー - 用途別制御とPay Per Useを解説 - TECH NOISY",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNV2xjQjZ6RVZRVDRTNWtuV1BKeVBlQWFCREhRMTk0cVhzZExmaGc1bWYyaUUxMWc0bFU5NUdPZ20zQnhtUWJObmYzaW1qZ0pLaThfZDQ3YVJhbENkYUE4cUlUOV8xcjZzUFhrSlBsQ3pvbFpYYm9JQ29aVFpTQkJibWVpMDBjNWc?oc=5",
+      "summary": "Cloudflare AIクローラー - 用途別制御とPay Per Useを解説 TECH NOISY",
+      "source": "TECH NOISY",
+      "date": "2026/07/04",
+      "tag": "ニュース",
+      "score": 1
+    },
+    {
       "title": "iOS 27でiPhoneが変わる！Apple Intelligenceによる12の新機能まとめ - apple-hacks.com",
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPTGNSbDA4eWZhQnM0aVk2VTFCRmxCeWFuNnFva1QyRW1VWkVlc3ltdnFIXzBiaFJ2OTJUejVveHpkTzkzOExCX3I1dFh2Tmc5UVdNcENacVVpQUxqdWRyOEhZQmtGb3Q0ZF9IVjl3LXl3TjRnR3hmbWFsOTZWamxxS3djTl8?oc=5",
       "summary": "iOS 27でiPhoneが変わる！Apple Intelligenceによる12の新機能まとめ apple-hacks.com",
@@ -110,15 +119,6 @@
       "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1EQUtwU05jbElRV3JIaFlXZ2VIRThfNG13dnpZMkdpcHhUZWxVUEpwQjRGZG0zckdJZ05WQXpQeFhSSzd3VjBxVmZDN3BORXBfTWM5cg?oc=5",
       "summary": "HitPaw VikPea V5.4.0が登場！より効率的な映像制作体験を実現 ASCII.jp",
       "source": "ASCII.jp",
-      "date": "2026/07/03",
-      "tag": "ニュース",
-      "score": 1
-    },
-    {
-      "title": "FamTec.inc ／​AIが学校のお便りをカレンダーとタスクに自動変換！家族向け共有アプリ「Famsync（ファムシンク）」が、プリント管理と家族間連絡を劇的に効率化する3つの新機能を同時リリース！ - pr-free.jp",
-      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5UbTFFTUF4Y1E5WW5mckRqeHl0eHNDMkNBNnRpOXFxSnhoc3h0R29aMzAzbnF1TEV0OVg4YmFLZnRBWUktY2c?oc=5",
-      "summary": "FamTec.inc ／​AIが学校のお便りをカレンダーとタスクに自動変換！家族向け共有アプリ「Famsync（ファムシンク）」が、プリント管理と家族間連絡を劇的に効率化する3つの新機能を同時リリース！ pr-free.jp",
-      "source": "pr-free.jp",
       "date": "2026/07/03",
       "tag": "ニュース",
       "score": 1
