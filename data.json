@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026/07/14 07:44",
+  "updated_at": "2026/07/14 08:51",
   "tennis": [
+    {
+      "title": "ズベレフがウィンブルドン制覇のシナーを称賛「世界一の選手」 - ｄメニューニュース",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOcmktLVRhR2ZzazBPXzRFN3BTQUI0NEZmX3lRY21VR0VLYTlOb1QyV1I1VVNYQXQyLTk2QkpZTm1HRDRkWGxkbHIyRHFJTTRlVHVISEt3S2tvanQ1aFFSbnlEaUM0LXZtaE80WTdLY0RpRmwzd0RFY0puTmw5dkpVX1UtNkpEM2ZMVlZIaNIBkgFBVV95cUxQNTVPYVlwenV1MjNFUklXYUN4cGtnWWJfa082MGg5N3pXcnJXUDdEZHlSZ2h2WkNfakstSVlzNGNFckRiT0x6Vjk4TFVwcV9mc0lzT2QyNjJVdUVDZUN1b3NHeWUtQUgwWGgxd2FKcGN1SUF0ZFcwN0hpa291bnNBaWc2S3BRRi1mdklMemNDV1hiZw?oc=5",
+      "summary": "ズベレフがウィンブルドン制覇のシナーを称賛「世界一の選手」 ｄメニューニュース",
+      "source": "ｄメニューニュース",
+      "date": "2026/07/14",
+      "tag": "ニュース",
+      "score": 1
+    },
     {
       "title": "錦織圭とIMGアカデミーで切磋琢磨した同期・富田玄輝の本音 「どんどん強くなるなと感じていました」 - webスポルティーバ",
       "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE51SmlzLUg2N2RJc2EzaHJ5Sng4b0RGckVVbkZUZEp3Qzl4NTdldU9DNmFJNFZDRTlvekUtT2R3cDB4MWN5OHZNRVRKZ09ka2JRaU9wZlBOaWlZMEI1RTY0OGVmTmxnVE1tYl92SV9OaldTZmpieUF1WmF0b2E?oc=5",
@@ -25,15 +34,6 @@
       "summary": "[最新ATPランキング] 2026年7月13日付 テニスマガジンONLINE",
       "source": "テニスマガジンONLINE",
       "date": "2026/07/14",
-      "tag": "ニュース",
-      "score": 1
-    },
-    {
-      "title": "[最新ATPランキング] 2026年7月13日付 - テニスマガジンONLINE",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1nUnpLMVlwbmQ4MWxKeHM3T2hSSWZaLVRMSURyM1RseDF6VndzZUF6M05HUDBCVHRqN2xBbTBWNVFhekYtS214bGlWTWNlRmZYVnBOSkgtZ0JNUQ?oc=5",
-      "summary": "[最新ATPランキング] 2026年7月13日付 テニスマガジンONLINE",
-      "source": "テニスマガジンONLINE",
-      "date": "2026/07/13",
       "tag": "ニュース",
       "score": 1
     }
@@ -88,6 +88,24 @@
   ],
   "tech": [
     {
+      "title": "iOS 27のパブリックベータ公開、注目したい新機能10選を紹介 - スマホダイジェスト",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9IOWpyNEh0Y01sazd6V2NmdllpZ2ZTZ2xUdUo0LUF2bVpMR045aEtDNVBqQS1OVlhUeHo0ZURVN1RSSVAxMHFPcw?oc=5",
+      "summary": "iOS 27のパブリックベータ公開、注目したい新機能10選を紹介 スマホダイジェスト",
+      "source": "スマホダイジェスト",
+      "date": "2026/07/14",
+      "tag": "ニュース",
+      "score": 1
+    },
+    {
+      "title": "Excelの参照セルがずれるイライラを解消！ 新関数でも必須な「スピル」とは - 日経クロステック Active",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNOTJGb3lhV3FSbnBOUmFqcGdiNjN0SGE5WDZkVnFnSW9ybk5Yb1o5dUJmRU1FN3FFZTcxa0ZmZ1pFcU1GTUV5cWk0THhaR2Zab0Rmd2VWRXVLUlQ0bXFnbnFpNDNiUjJhRWh6YVladm5sbjlSVGp2c3dHdWlVMnFpRWNPcUV4cUFTOFpydA?oc=5",
+      "summary": "Excelの参照セルがずれるイライラを解消！ 新関数でも必須な「スピル」とは 日経クロステック Active",
+      "source": "日経クロステック Active",
+      "date": "2026/07/14",
+      "tag": "ニュース",
+      "score": 1
+    },
+    {
       "title": "Instagramの最新AIツール、公開から1 週間もたずに終了 - MSN",
       "url": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxORVRtWDVJNjBORXZ2bHpKMV8wY2ZZRjFOUWZSR0NXTkQyWlhPVUdsYkFId0V5U3BNS2F5RVV4TEk0VU5pWFFDMjN3V2lCdGx3QUl5RFEteFhFdU5EN19MMUNRUnI0QmE1Z3FTU21oN2xXaFVXMGRHMWtWdkJqS2VOZUFPZE83VGNhdFBROXhaUGdTRDRabGllQV9CZV9IUUU4d01KYTdlSzV0T1NhNkVkak0wdGJHTV8td3ozNFhOZHRDVEJKSXFtSDdXWFZ2X05oMjl1NDk5QUV6V3dMWE9ZOC1DdFhDVUZTRG1wMWhjNjBfZE5DMXFsd3hvMUVvSU42dkFFMlpiVGcwQl9zQm5vZnFzQnREckVrMmkzamlUdWZpcTVkTEN4TF9LY0xhVGl1a3NyUVJZV1hROUdFTFV4dy1IcUNDanpp?oc=5",
       "summary": "Instagramの最新AIツール、公開から1 週間もたずに終了 MSN",
@@ -104,24 +122,6 @@
       "date": "2026/07/14",
       "tag": "ニュース",
       "score": 1
-    },
-    {
-      "title": "「Waze」Gemini統合など5つの新機能展開 - jetstream.blog",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE94bU9EY0lQV2VqdTZwdTZ2ZmppQ0VrNjh3b2xpb0lFdlpKU2VxWlhvcDRQcnNBakp0TzZJajdwNF83TFl6bnFtX3diSTFNYjNzTklBTGp4SDBTXzR0cDFCXzJyTXA1VURUbDlTM3JLaTk?oc=5",
-      "summary": "「Waze」Gemini統合など5つの新機能展開 jetstream.blog",
-      "source": "jetstream.blog",
-      "date": "2026/07/13",
-      "tag": "ニュース",
-      "score": 1
-    },
-    {
-      "title": "Down 71% In Last One Year, Is Wix Stock Finally Worth a Closer Look? - TIKR.com",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOR2RuMjhOZ1NJS0oxeFhZQTd4eGg1UWZNV0dLS2tGOVFfWGs5Umdwel9RWlM2eU9zQjVSVmUyb1EtX2pRWk1qZlZpVHlPVm83SmNnemNwTThvbGxEZWdna3RWVXN0QV9QTnJfLUF5VXR3c0p6aTNQU2VhaU1PazZicnV2WDRuMkp5by1j?oc=5",
-      "summary": "Down 71% In Last One Year, Is Wix Stock Finally Worth a Closer Look? TIKR.com",
-      "source": "TIKR.com",
-      "date": "2026/07/13",
-      "tag": "ニュース",
-      "score": 1
     }
   ],
   "tech_keywords": [
@@ -130,6 +130,15 @@
     "ガジェット"
   ],
   "culture": [
+    {
+      "title": "【川崎】首都圏最大の沖縄フェス「はいさいFESTA 2025」が開催！GWは川崎で沖縄気分 - 地球の歩き方",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE44OE9KUmdqM3FxUUh2dzhDcXpmSVktZmJZUVN4R3Z6Z3RTOEVObEFQOW15aWl4Wk5yMHU3TnBLLVJVNE9WV0lTVTFzWlRMWlZSRFJZVnJJR0RURXM?oc=5",
+      "summary": "【川崎】首都圏最大の沖縄フェス「はいさいFESTA 2025」が開催！GWは川崎で沖縄気分 地球の歩き方",
+      "source": "地球の歩き方",
+      "date": "2025/04/26",
+      "tag": "ニュース",
+      "score": 1
+    },
     {
       "title": "はいさいFESTA 2026 - レッツエンジョイ東京",
       "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE16RE42aElFcThyNURlTWk0SERuaEtHYnR1ZjNWaXd5ODhENW5JWXN6cUE4SURyOFYzRG56VG1SeWxGLWZEdHVmRl83NG1FRHg1?oc=5",
