@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/09/10 08:40",
+  "updated_at": "2026/09/10 09:47",
   "tennis": [
     {
       "title": "デイリーダイジェスト 大会第10日 【全米オープンテニス2026【ハイライト】】 - ABEMA",
@@ -29,10 +29,10 @@
       "score": 1
     },
     {
-      "title": "【全米テニス】ジュニア部門に湘南工科大付から3選手が同時出場 優勝候補ドイツペアから大金星 - Infoseek",
+      "title": "【全米テニス】ジュニア部門に湘南工科大付から3選手が同時出場 優勝候補ドイツペアから大金星 - news.infoseek.co.jp",
       "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFA4TGpvQm9SX3J2NS1WYjNuY0RldVo2NTRyMk1jZDZCbXlTUGtmaGJ4aHBnWXV5VUlLdGVNRzdGRFdhdmUxem1waDRaWENDSEhESmgtaml2RjBrWG1ab2R6R2EwNFV2QWdwUUhGbG1EaGZaZ9IBckFVX3lxTFA4TGpvQm9SX3J2NS1WYjNuY0RldVo2NTRyMk1jZDZCbXlTUGtmaGJ4aHBnWXV5VUlLdGVNRzdGRFdhdmUxem1waDRaWENDSEhESmgtaml2RjBrWG1ab2R6R2EwNFV2QWdwUUhGbG1EaGZaZw?oc=5",
-      "summary": "【全米テニス】ジュニア部門に湘南工科大付から3選手が同時出場 優勝候補ドイツペアから大金星 Infoseek",
-      "source": "Infoseek",
+      "summary": "【全米テニス】ジュニア部門に湘南工科大付から3選手が同時出場 優勝候補ドイツペアから大金星 news.infoseek.co.jp",
+      "source": "news.infoseek.co.jp",
       "date": "2026/09/09",
       "tag": "ニュース",
       "score": 1
@@ -88,6 +88,24 @@
   ],
   "tech": [
     {
+      "title": "Okta、エージェント型企業を保護するアイデンティティガバナンス新機能を発表 - PR TIMES",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFByM2Z1QmVPb1p1U3l4V2lGM2xGX2hQb2ZiMUpoSmxoUl8tYUdlbG5aSVdwdXh0U2xuZlNKejJGTHQ5QXkxRDRmNzAzTE1XcUtINWRieVEzNlBwWG9NSy1IQi12TEpBR3dXTlE?oc=5",
+      "summary": "Okta、エージェント型企業を保護するアイデンティティガバナンス新機能を発表 PR TIMES",
+      "source": "PR TIMES",
+      "date": "2026/09/10",
+      "tag": "ニュース",
+      "score": 1
+    },
+    {
+      "title": "イベントで発表されたiOS 27の新機能：Image Playground、Safari Notify Me、iPhone Handoffなど - The Mac Observer",
+      "url": "https://news.google.com/rss/articles/CBMi9wJBVV95cUxNcGV0OXo1aUw3QnR6NExHSG9HejJJSU9lcjBvS0dNZUkyZWQzTVYxQ0VMZ2psNHEteXZLTTdiVEhFTVBGcEtWTkw0VG4xQTJqTFhHV3JmTUs1LU94X3VMMjg4dG8wTUthUVhaSDRqWmtmcmc4aE5DVURkMjdaRWhiUnB3VmhIeEFOS3NIU0pBb05FYlhKTXJzMzJZY1BWT1lqSE9ubzhteVpjOWRlcGE0M1l2bzhzajhZWXJkSW53czhGZm5rcThjMWxsYndEVVBSRjA4UEtFZVEtU2FmMTVmQnZwY0lCY25pZ2lnbDJjVkpQTXJKblZLc0NUUXBia2ZuN1pueC10dFc2WXhwRl9EVmJxUk5qX1c2OVZFXy00bTBleHpRN2lxMU51ZlhhN2cyLVpiWVdBeUdaYjl6UGtiZGhVa2NqLVBqWjB2dzJlcDJkcERlYlN1NWdBdTR5dkxlVVhhOWlSYkZiYnpSSUZ3YWQ3Zk9XY2s?oc=5",
+      "summary": "イベントで発表されたiOS 27の新機能：Image Playground、Safari Notify Me、iPhone Handoffなど The Mac Observer",
+      "source": "The Mac Observer",
+      "date": "2026/09/10",
+      "tag": "ニュース",
+      "score": 1
+    },
+    {
       "title": "新機能も新素材も来た！ Apple Watch Series 12／Ultra 4のすべて #AppleEvent - Gizmodo",
       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE55M0tSUmJmYm1GWnEyUy1UNUJiamstOFB4bzNTU0g1Tmp1ck9VNW1aT21kWjBHVm92eUhjbUd2b2NBd0FEeXBZYWQ2MUxRcGtGa3Q3emxKd0NNZUNvdTRpNHhkUHptckROSVpRWWUwV09TaDNG?oc=5",
       "summary": "新機能も新素材も来た！ Apple Watch Series 12／Ultra 4のすべて #AppleEvent Gizmodo",
@@ -101,24 +119,6 @@
       "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1leDhpNXpjQ3k0OExKZ1dpZHN2S1ctRlZ2MEFySy1reVpuTUpaWDc0ejFkMDMwX3hHODktZk1QTm05dm1idnVqay1HdlhZT2hYRERJaExQaEZOTFlhNjdlQ3laRmhJQTA?oc=5",
       "summary": "Apple Watch Series 12／Ultra 4 発表。S11チップ、「ウェアラブル史上最高精度心拍数センサー」搭載 テクノエッジ TechnoEdge",
       "source": "テクノエッジ TechnoEdge",
-      "date": "2026/09/10",
-      "tag": "ニュース",
-      "score": 1
-    },
-    {
-      "title": "5分でわかるアップル発表まとめ--「iPhone Duo」以外の新製品は？ 新AirPods、新Apple Watchも - Yahoo!ニュース",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE91aE52ZVpLMVV0bXZET2FwRXY3ZjdDOGtLbmcwMEw4TDNWOUxBRlpGQm5ldFN3NDFEYWc3eUswU0JtVkNrOWhHN2k1ZnJtdE5rbnBXdnVZM3ZFaFlUS0ZzQWt4S1FSbDRIWkFtd3E5RVFoZTktaVlXU3lLbkZXRWc?oc=5",
-      "summary": "5分でわかるアップル発表まとめ--「iPhone Duo」以外の新製品は？ 新AirPods、新Apple Watchも Yahoo!ニュース",
-      "source": "Yahoo!ニュース",
-      "date": "2026/09/10",
-      "tag": "ニュース",
-      "score": 1
-    },
-    {
-      "title": "iPhone 18シリーズは知的な「パーソナルハブ」を目指す アップル新製品 - ｄメニューニュース",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPZC00dU5kV0o1blFWdVExRkZZVFZ0LVZ6ajJLUld3emd6MVBZcVdhVlZZQk11VVoxY2hwQXR3RWttdmF6YzZlNkN0UENkUkFBMEFUTDdCWDM0RnlmQnBXZW5NSDRweG1sNWZGRFJEWEtFZUFjaG9kMHZpVFNqVEgzTElBVdIBgwFBVV95cUxPZC00dU5kV0o1blFWdVExRkZZVFZ0LVZ6ajJLUld3emd6MVBZcVdhVlZZQk11VVoxY2hwQXR3RWttdmF6YzZlNkN0UENkUkFBMEFUTDdCWDM0RnlmQnBXZW5NSDRweG1sNWZGRFJEWEtFZUFjaG9kMHZpVFNqVEgzTElBVQ?oc=5",
-      "summary": "iPhone 18シリーズは知的な「パーソナルハブ」を目指す アップル新製品 ｄメニューニュース",
-      "source": "ｄメニューニュース",
       "date": "2026/09/10",
       "tag": "ニュース",
       "score": 1
