@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/09/12 08:41",
+  "updated_at": "2026/09/12 09:51",
   "tennis": [
     {
       "title": "車いすテニス頂上対決 小田凱人×A.ヒュウェット対談 【全米オープンテニス2026【特別映像】】 - ABEMA",
@@ -63,10 +63,10 @@
       "score": 1
     },
     {
-      "title": "写真5/5｜音楽フェス「サマーソニック 2026」東京・大阪、Ado&ラルク＆ザ・ストロークスがヘッドライナー - ファッションプレス",
+      "title": "写真5/5｜音楽フェス「サマーソニック 2026」東京・大阪、Ado&ラルク＆ザ・ストロークスがヘッドライナー - fashion-press.net",
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE50UC1Xb0NwT3hXU2dsbHJNUFpKZHlWQkhNYlpaZHIzZWowUU5MTTA5U2lTUng1OWZmd1RWQWlhYVlaTWNLSjIzN3hTc1d3NE8xTU1rLXV4MVdTOE9DZXVYZXBueWpIaVZl?oc=5",
-      "summary": "写真5/5｜音楽フェス「サマーソニック 2026」東京・大阪、Ado&ラルク＆ザ・ストロークスがヘッドライナー ファッションプレス",
-      "source": "ファッションプレス",
+      "summary": "写真5/5｜音楽フェス「サマーソニック 2026」東京・大阪、Ado&ラルク＆ザ・ストロークスがヘッドライナー fashion-press.net",
+      "source": "fashion-press.net",
       "date": "2026/09/12",
       "tag": "ニュース",
       "score": 1
@@ -88,20 +88,11 @@
   ],
   "tech": [
     {
-      "title": "Lenovo×AMD重役対談。ドイツ開催の新製品発表で話されたAIの展望、“Smarter Technology for All”を掲げて - Infoseek",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1VRTVkZDFjdmNoUVlTd3pQc1NJUXJ3alNXMzJJRjZxYkI4Rm1CaXNGbjZidkMtQnNaaE9fUlhuX1R6TUR1c2VQTHJYaFJXLWtlSUVUb0RuclpHT3BacXF1Vw?oc=5",
-      "summary": "Lenovo×AMD重役対談。ドイツ開催の新製品発表で話されたAIの展望、“Smarter Technology for All”を掲げて Infoseek",
-      "source": "Infoseek",
+      "title": "Lenovo×AMD重役対談。ドイツ開催の新製品発表で話されたAIの展望、“Smarter Technology for All”を掲げて - マイナビニュース",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1uZkVqRjRvdXA2VW1DSlIwbEdTdk1Oa2E1QWFmLXFkSEZxZzVVUnRHMXlUTWlrVFRualozaVYtZ0U4d1FrTkV1aTdQWk5DNFBqVExhMjZUeUIzSHFS?oc=5",
+      "summary": "Lenovo×AMD重役対談。ドイツ開催の新製品発表で話されたAIの展望、“Smarter Technology for All”を掲げて マイナビニュース",
+      "source": "マイナビニュース",
       "date": "2026/09/12",
-      "tag": "ニュース",
-      "score": 1
-    },
-    {
-      "title": "AIデータ社、AI孔明 on IDX新機能「ヒヤリハットAI(TM)」の製造業向け「AI ヒヤリハットLoop on - ニコニコニュース",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1ndDFqZ1dQdDdYTjRybFNFdUJKdGhrYlNqN29HOWtBbU5scEdMM19DNFFLeDRxQWtTRDJweWN1X0xOR2VQVm1DRDJQblM2TnFSdlo0cW9ZV2hKNzMzcE9WYTQtclNCUQ?oc=5",
-      "summary": "AIデータ社、AI孔明 on IDX新機能「ヒヤリハットAI(TM)」の製造業向け「AI ヒヤリハットLoop on ニコニコニュース",
-      "source": "ニコニコニュース",
-      "date": "2026/09/11",
       "tag": "ニュース",
       "score": 1
     },
@@ -110,6 +101,15 @@
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAzYkVhYzAwcUROS055NFBTUWJkNFNITlNkN3FZbmRYTXlQYkpjcFdLMGlrb29aZVV6UVFsOUdlcEFRQkZWNzdvY3JDb2tUOEZKUnVrX3FOYVB1MXZpbXE2RjJGSVIxaTZLSmc?oc=5",
       "summary": "AIで音楽操作が可能に Sonos、新OS「Sonos 27」の提供を開始 AppBank",
       "source": "AppBank",
+      "date": "2026/09/11",
+      "tag": "ニュース",
+      "score": 1
+    },
+    {
+      "title": "AIデータ社、AI孔明 on IDX新機能「ヒヤリハットAI™」の製造業向け「AI ヒヤリハットLoop on IDX」を発表。失敗知を企業知能へ - PR TIMES",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBoYWdPcm0yRW5FbDZMMDNRWjkxdUFWa0liMm1BczZJaW0tSTZPSHFMakF0OTRoVFFrOWozd0hHYnlkR1J3ZXNpOTZFN05NM3M1dE5PdnA4UE1UdlRNRFduS1Z0enlnREJxV0E?oc=5",
+      "summary": "AIデータ社、AI孔明 on IDX新機能「ヒヤリハットAI™」の製造業向け「AI ヒヤリハットLoop on IDX」を発表。失敗知を企業知能へ PR TIMES",
+      "source": "PR TIMES",
       "date": "2026/09/11",
       "tag": "ニュース",
       "score": 1
