@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026/10/07 10:08",
+  "updated_at": "2026/10/07 11:01",
   "tennis": [
+    {
+      "title": "錦織「テニスが大好き」 引退セレモニー - 岐阜新聞デジタル",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE51dTdCOHhfVmZzNENJTkhwYTAzMEtjMmJNTk5HT2R4VFVWM0V1U2NMd2pBN2JiZ2RVaUo2VkpZVVpkNzdkb1d1dHNFbDNyVTZBZHhyRkh3?oc=5",
+      "summary": "錦織「テニスが大好き」 引退セレモニー 岐阜新聞デジタル",
+      "source": "岐阜新聞デジタル",
+      "date": "2026/10/07",
+      "tag": "ニュース",
+      "score": 1
+    },
     {
       "title": "あいさつする錦織 テニスジャパンＯＰ - 佐賀経済新聞",
       "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE04YmJvYV81WHRIRlltSnEzS0ltZk5pdGs3X1dSNEJtWkhLZ0w5WVBicm0tSDFMcjQ4Y3BHbTBoTUpEWFRObHJRaldPc1dRdEIy?oc=5",
@@ -24,15 +33,6 @@
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPbDJhQzYyTDZvY2dYQnlNNFhXU05SdFBVR1Vnem1UUXBsS1IxcTFrQmhXdnE4dHk4dXZwc2lPeTBtdzlqbVQ1eFhadDlka0xWX1dWMDAyeWNKcEhNMDBjNHBzNnlnRzl2c1FRWUhqN1AyREJLS2FydW1YUlM4LUo4WlpDQkFheGE1R3dydQ?oc=5",
       "summary": "【テニス】錦織圭に特別栄誉賞 チャン氏「コーチで友人だったこと誇り」盛田氏「孫みたいなもの」 日刊スポーツ",
       "source": "日刊スポーツ",
-      "date": "2026/10/07",
-      "tag": "ニュース",
-      "score": 1
-    },
-    {
-      "title": "錦織圭が引退セレモニー「楽しいテニス人生送れた」 - SmartNews",
-      "url": "https://news.google.com/rss/articles/CBMiiwNBVV95cUxNZHZUajZlYUJkT01Tc2tlM055NE9mam54Vm55TmxXaFB2M2lMQVZSQ3RwcE5CUzF6Zlo3VWUyek1WeWxuOFVXb2dyLWRKOWYwZHg5WVZ6WkxTbkF6ZXdqeEVBNEhQYVM5ekx6ck1jd1haTXJicmIwOXQ3Wi0yOGsyRTJ1NW9LRGhSdFQwWk1yRDJmODQtdWx1MTZjLVNCNG1tSUJNbUtDdTlHRjBLeWZFUzhOc29fMVktTi1Id3ZmSWhaZ3dFOVptQTVja3phQW9ZbElCcXAxM2cwY2JRZlFrQURTVTRMV1VOeXd1bjJxS1A1NkFfSVRYak9mbC1aVUFidWFnUmtlQlNpcE9NdGpPYnpwOUExMjJ5akJfOVZ4Q2lOaGJLeHQzRXpub2ZtZXdRVU5XWWJ5Nl9IYzVQQjNOSDZrT1ZsM2RqS0s1V2hySXJYemVJQ3JCWnFSbzBINVpoaF8zbnRRZTZkM2l4WHB2Mk12LVdnbTVocU9QNkRibTZidjZxWHNzaGhrNA?oc=5",
-      "summary": "錦織圭が引退セレモニー「楽しいテニス人生送れた」 SmartNews",
-      "source": "SmartNews",
       "date": "2026/10/07",
       "tag": "ニュース",
       "score": 1
@@ -88,6 +88,24 @@
   ],
   "tech": [
     {
+      "title": "AIが20万本超の動画を解析 『顔なし・1人・複数』で素材検索、DeLMOに新機能（電波タイムズ） - Yahoo!ニュース",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9UQnNCVlB3TVRxRzdBR09LWHYzc0l1cklQRFluWmFCM0N3ZTJzLU9nVm04QzdIMXRiUl90TV9wS1MzcUJxTWRueTJkZVVIY1Vtc3NPdjlBa1ZTLWxjSFZVNk1zY0ZNQmp4TUJkbVVVeHUxLUYyQUNiQ1I5NksxaW8?oc=5",
+      "summary": "AIが20万本超の動画を解析 『顔なし・1人・複数』で素材検索、DeLMOに新機能（電波タイムズ） Yahoo!ニュース",
+      "source": "Yahoo!ニュース",
+      "date": "2026/10/07",
+      "tag": "ニュース",
+      "score": 1
+    },
+    {
+      "title": "Archaicの広告チェックAI、社内規程や業界ガイドラインも同時にチェックできる新機能「カスタムルール」をリリース - PR TIMES",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1WQ2U2NGh3TDhKS3RfUkx6XzhkU0JVTDh6WlYtUklIZVlCbW5ONUFWWnI5bzUwSlVLNnJ6R3huMl9wck80MzdYc2JCQTl0dkw2OXNtWlFnd0xjVk9HaDAycE04cmNwR3lqdXc?oc=5",
+      "summary": "Archaicの広告チェックAI、社内規程や業界ガイドラインも同時にチェックできる新機能「カスタムルール」をリリース PR TIMES",
+      "source": "PR TIMES",
+      "date": "2026/10/07",
+      "tag": "ニュース",
+      "score": 1
+    },
+    {
       "title": "ソースコードの流出により、今後の新機能が明らかになる Apple TV a HomePod - Jablíčkář.cz",
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNcDRDdktWSXhabDBlcF9ZQU1sRUZpc3VhVlhPU3otUm5NQ3U4OWtueEZWYWx3OExtczdBZ1BaZG1SQldUOU1pTEhTV0dMTXpaVG1EUWY4WFpBSENQRmhZb19lSHVyak9EM2NoNy0xLTFCQXFIUW5XVkI1a3cxLXNXZkFVOGluM3VEbHhrSF9LOEFlUUtUcmFMdzh4VkdFbHBnRkQzWFZB?oc=5",
       "summary": "ソースコードの流出により、今後の新機能が明らかになる Apple TV a HomePod Jablíčkář.cz",
@@ -101,24 +119,6 @@
       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPMXV2THJwOUhNRFc0SzQ5Y2Y2YXc1X3JacjJWYW51WmFuUjE2MC0zekYyVDNFVndpbHNFWjdCSHFXODNVSVg1UkVNTnRWN2RKRjVaY3dnYUIzWkszTWVON0RGeWtrYy16YzRhTGhNa1lxRXdEU0h3d0xmMVg5QTlZLQ?oc=5",
       "summary": "tvOS 27.2ベータから判明か、Apple TV 4KとHomePodの新機能まとめ https://www.apple-hacks.com/",
       "source": "https://www.apple-hacks.com/",
-      "date": "2026/10/06",
-      "tag": "ニュース",
-      "score": 1
-    },
-    {
-      "title": "IOS 27パブリックベータ、もうすぐ配信。入れる前に知るべきこと全部【対応機種・準備4つ】 Snow (v6H1tgp9dZ) - Unisba Media",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQOGc4TXY5LW5JaUxXbVlOMzVTSFJJeWpTRjM3X28yQUNkMjdLSTl0UVRfOGZURUp4bVBBUlBWWS1sSWNLOTJwZ1JrWlpDWS1KQVNKVmE0Z0V2Wmk5TEdQd0swNVdtVG90Q2trMHpmNmFFSkNsN3dVQ0VkZU9ubmtRUFhR?oc=5",
-      "summary": "IOS 27パブリックベータ、もうすぐ配信。入れる前に知るべきこと全部【対応機種・準備4つ】 Snow (v6H1tgp9dZ) Unisba Media",
-      "source": "Unisba Media",
-      "date": "2026/10/06",
-      "tag": "ニュース",
-      "score": 1
-    },
-    {
-      "title": "AI活用の二極化解消に向けた新機能「バディエージェント」を10月末提供—エクサウィザーズ - HRzine",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5YU1VDX1pQa0pYY1lJa1dVdmw3TnJHdm9kdjl4OWNjYTRjeWd4ZktIeHFZOS1NYXc5WEx1S005NW12ZG5FTzFBODdiNzVEZw?oc=5",
-      "summary": "AI活用の二極化解消に向けた新機能「バディエージェント」を10月末提供—エクサウィザーズ HRzine",
-      "source": "HRzine",
       "date": "2026/10/06",
       "tag": "ニュース",
       "score": 1
