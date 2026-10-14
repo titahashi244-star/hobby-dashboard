@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/10/14 09:44",
+  "updated_at": "2026/10/14 10:33",
   "tennis": [
     {
       "title": "「最後まで『負けず嫌い』なくならなくてよかった」元世界ランク4位・錦織圭の源泉…ラケット置くその日まで - 読売新聞",
@@ -54,15 +54,6 @@
       "score": 1
     },
     {
-      "title": "画像2 / 5＞群馬・桐生で音楽フェス「KIRYU FESTIVAL 2026 MUSIC ＆ CULTURE」が初開催！新緑の公園で音楽と伝統文化に浸る2日間 - ウォーカープラス",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA5bzhTSVhMMEVBU0dlZVlpc0cybldZWlJ1ejlLQWpYNHZFZW1rcG9SYTA3aGJTUGpiNVJKbFNNb3Q2NmFHb2N5dFl2TnBYMVVDQXhpTUhkcGd6SGU4VTAwcXM5UDNwZ2duU1FRSEVn?oc=5",
-      "summary": "画像2 / 5＞群馬・桐生で音楽フェス「KIRYU FESTIVAL 2026 MUSIC ＆ CULTURE」が初開催！新緑の公園で音楽と伝統文化に浸る2日間 ウォーカープラス",
-      "source": "ウォーカープラス",
-      "date": "2026/10/14",
-      "tag": "ニュース",
-      "score": 1
-    },
-    {
       "title": "【動画】超特急、野外フェスらしいカジュアルスタイルで「a-nation 2026」にて語る「超特急としては初めての東京ドームになりますし…」 - WWSチャンネル",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9xVkkzdWp6VWo5Q1JOTFNWbEVhbkZONnNFV0hpaDhEVktNVzFTT2RiVkxnUEw3M2xJRU9lMmhSQS1adWNBdnUwSFVXNW1zdHhXZ1JOM2xQUkVhdw?oc=5",
       "summary": "【動画】超特急、野外フェスらしいカジュアルスタイルで「a-nation 2026」にて語る「超特急としては初めての東京ドームになりますし…」 WWSチャンネル",
@@ -79,6 +70,15 @@
       "date": "2026/10/13",
       "tag": "ニュース",
       "score": 1
+    },
+    {
+      "title": "音楽フェスが県内でも増加 地域経済の盛り上げにも期待高く グルメに伝統産業アピールも 課題はほかのフェスとの差別化 - 日テレNEWS NNN",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNNVNrdlY4VmluN21VS29qTVc2V1VPZEFBbDdNMVJkLVdaWlFsMGRHYXlyXzM2WWJDREY0NHFlMUJ0XzloMUZGTTZXUmtKeWJHdHI1N2ZmTF9oV0tJWktUb3FaMHJ2aUVqX1NMck5ndnQ2aDVxbF9UYTJvMUNyaWR2SnZ3V3Boamc?oc=5",
+      "summary": "音楽フェスが県内でも増加 地域経済の盛り上げにも期待高く グルメに伝統産業アピールも 課題はほかのフェスとの差別化 日テレNEWS NNN",
+      "source": "日テレNEWS NNN",
+      "date": "2026/10/13",
+      "tag": "ニュース",
+      "score": 1
     }
   ],
   "music_keywords": [
@@ -87,6 +87,15 @@
     "ロックフェス"
   ],
   "tech": [
+    {
+      "title": "AIヒアリングエージェント「Kikuvi」、質問に画像を表示できる新機能をリリース - PR TIMES",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA2czRNM0lCZjVhRW5pSUdQaTFDeHo5dC10Um1UaDZDclFEVG93OW5xUUF0QkR5TVY2bW9TRjEtWHRtYnpPS3dPQ2JYUkNYb3Z2MDBZX3FFa0pyRldqRVNxZWNaSHdrWmlNTkE?oc=5",
+      "summary": "AIヒアリングエージェント「Kikuvi」、質問に画像を表示できる新機能をリリース PR TIMES",
+      "source": "PR TIMES",
+      "date": "2026/10/14",
+      "tag": "ニュース",
+      "score": 1
+    },
     {
       "title": "アトラシアン、AIネイティブな次世代サービスマネジメント基盤「Service Collection」の新機能を発表 - PR TIMES",
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB2UTZKeFZjbzBmQVFEQmZxOVV5a3lLUHoxS1dRNWNlUzVBSUtkTi1nbHZlR255SG96NnF2WDdOdEdnVEc3SC1aX3packtrS1pkZnJVWk1DYWZnZUtTU1I1UWlxRHA3ZTd4d0E?oc=5",
@@ -106,19 +115,10 @@
       "score": 1
     },
     {
-      "title": "ChatGPT・Google・Amazonが相次ぎ新機能――EC事業者が押さえたいAIニュース３選 - コマースピック",
-      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBJdHh4WlFxRFg0WmQ0blowRU5KOHlBS0VhYkpmZXpBeS05UENRemc0bUNMSXR0QXUweXQ0QWRhSEVHRG9JMzR4RlJva3lXaGltTHNuUHVkZw?oc=5",
-      "summary": "ChatGPT・Google・Amazonが相次ぎ新機能――EC事業者が押さえたいAIニュース３選 コマースピック",
-      "source": "コマースピック",
-      "date": "2026/10/14",
-      "tag": "ニュース",
-      "score": 1
-    },
-    {
-      "title": "HomePod mini 2、正式発表。音楽で光る新機能と4台サラウンド、新色も - ゴリミー",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9ZMzB3UnVsZ2VGZHN1WEpVSk5IN3JlMUN3ajE4a1Y0N0p2QlhyV21qdG5FSnZQc1gzcjdaaUY5aVhtQlEzRGJKOVQxSFJQVjI1XzJkd05qcXZwRGN3MUxLLS1qSnR1Z29a?oc=5",
-      "summary": "HomePod mini 2、正式発表。音楽で光る新機能と4台サラウンド、新色も ゴリミー",
-      "source": "ゴリミー",
+      "title": "GPT-6の新機能「Intelligent UI」、日常の質問に対し視覚的な回答でより分かりやすく提供 - EnterpriseZine",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBoVlg5dmlyV0FHUXhTZk9XYjROZnRIZjI3RVBNSmt3RGV2cl9WMGxUYUZHNlJQTkY1SS1IcmJQMGdtOWpnSFU0ZnhrcHdwY1NNaWZZRVpR?oc=5",
+      "summary": "GPT-6の新機能「Intelligent UI」、日常の質問に対し視覚的な回答でより分かりやすく提供 EnterpriseZine",
+      "source": "EnterpriseZine",
       "date": "2026/10/14",
       "tag": "ニュース",
       "score": 1
