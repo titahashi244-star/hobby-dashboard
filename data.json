@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/11/05 10:53",
+  "updated_at": "2026/11/05 12:05",
   "tennis": [
     {
       "title": "錦織圭に島根県民栄誉賞と松江市民栄誉賞、17日に授与式 松江市出身、市役所で写真展も - https://mediadogs.jp/",
@@ -45,6 +45,15 @@
   ],
   "music": [
     {
+      "title": "サカナクション 11/7（土）より2ヶ月間にわたって過去のライブ映像を公開する 「冬のサカナクションLIVE特集」開催決定！ 第1弾は「SAKANAQUARIUM 2013 sakanaction」 - USENの音楽情報サイト",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNaWtXUUdkWEF1U1pmdVh3YkFCYk90UW1FWDBTTWxHSVRJSUZLVzAzWnYyTk1wa3hxdjJJLVhRMXJNTXlZeWJ2aGYwUHBzcmFCbWJicEZUTDJlVm00dFNZRFowT000MUFpOFFvTERPbDNGbUdYaXJ3TTNjN2o2OWhoSUkzdDBzamRpYnhXNw?oc=5",
+      "summary": "サカナクション 11/7（土）より2ヶ月間にわたって過去のライブ映像を公開する 「冬のサカナクションLIVE特集」開催決定！ 第1弾は「SAKANAQUARIUM 2013 sakanaction」 USENの音楽情報サイト",
+      "source": "USENの音楽情報サイト",
+      "date": "2026/11/05",
+      "tag": "ニュース",
+      "score": 1
+    },
+    {
       "title": "タイのアーティスト「EURO」「LEPYUTIN」が東京・渋谷の音楽フェス「BiKN shibuya 2026」に出演 - タイランドハイパーリンクス",
       "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE8xcW9ac0tKb1VfbkRzd05WRVhUSUZXVjNxUG0wNUt2azFrUW56OFgtRXNZMUhLQ1JhQ2ItY2xkTGVNR3V4ZE5tb2hxT0FkU2I5TXJ3ZA?oc=5",
       "summary": "タイのアーティスト「EURO」「LEPYUTIN」が東京・渋谷の音楽フェス「BiKN shibuya 2026」に出演 タイランドハイパーリンクス",
@@ -70,15 +79,6 @@
       "date": "2026/11/04",
       "tag": "ニュース",
       "score": 1
-    },
-    {
-      "title": "サカナクション、過去のライブ映像を隔週で限定公開 『SAKANAQUARIUM 2013 sakanaction』からスタート - ニコニコニュース",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE15TV9Zazc1RUpfVTRLTUFmbnRlS0prcVJual9pQUhrYm1hM0NNUWh6dk5rbXNWeDdDcVo2QWpDUE1mS3EzZ1NtVVljOGVzZGo4dFdYdXNUX2M3WlgxWDVJSVVfbWlxTEdVX1ZoejdmNmpOMl90aFE?oc=5",
-      "summary": "サカナクション、過去のライブ映像を隔週で限定公開 『SAKANAQUARIUM 2013 sakanaction』からスタート ニコニコニュース",
-      "source": "ニコニコニュース",
-      "date": "2026/11/04",
-      "tag": "ニュース",
-      "score": 1
     }
   ],
   "music_keywords": [
@@ -88,19 +88,28 @@
   ],
   "tech": [
     {
-      "title": "グリッド、電力業務支援システムに生成ＡＩ機能を追加、計算エラーの原因を日本語で説明 - kabu-ir.com",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBTTGtpU3ktUl92UVlnc2h3UWRqYkdQM0VDS045bFV2WS1XS0pvUmUxWGZaQTN1bjNwZHZCUzYtcURpTFdXQmEzZF9pbHNnbkdhNEpLYw?oc=5",
-      "summary": "グリッド、電力業務支援システムに生成ＡＩ機能を追加、計算エラーの原因を日本語で説明 kabu-ir.com",
-      "source": "kabu-ir.com",
+      "title": "デスクワークの時間を取り戻す！ スマホなしで文字起こし・要約が勝手に進むAIデバイス「Plaud One」登場 - GetNavi web",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1hdmx6eU82akEzN0xFRm4zdnpudWtwajVDalVlOTNnWklZWDFNUjUwYXZfdndLYVdoQ2FQNkJ4NUttdjJrQ2FQWjdHUQ?oc=5",
+      "summary": "デスクワークの時間を取り戻す！ スマホなしで文字起こし・要約が勝手に進むAIデバイス「Plaud One」登場 GetNavi web",
+      "source": "GetNavi web",
       "date": "2026/11/05",
       "tag": "ニュース",
       "score": 1
     },
     {
-      "title": "Smartsheet、戦略と実行の「ずれ」を解消へ― ENGAGE 2026 でAIが業務を担う新機能を発表 ― - 時事ドットコム",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5yMUE2YmRIc0JwNmZVMHhCLVAyZWhsUEtjX2ZTcVY3SXRleERPTFotOV9OX3I4NlF1cE1QNHNFN2REcTZ4RVBtT2o1TXZ0MDJsNzZzOUV2Y0otQmpwaGJoTjFic2RMVU9WZFUw?oc=5",
-      "summary": "Smartsheet、戦略と実行の「ずれ」を解消へ― ENGAGE 2026 でAIが業務を担う新機能を発表 ― 時事ドットコム",
-      "source": "時事ドットコム",
+      "title": "Smartsheet、戦略と実行の「ずれ」を解消へ― ENGAGE 2026 でAIが業務を担う新機能を発表 ― - ニコニコニュース",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBKdjNyaGQyV0tVZEotby03amE3SnlMTU1lN0NrbGpoRkYyTlRmOEJ2bDRzaUUwLS15b1JWOUNRTXB1RWEtT01HMXRDc20tMUx2TWxrdEtUcmFtVmgtSHB0N2NEV1pHNmtkUUo3a25VMmNYUmc?oc=5",
+      "summary": "Smartsheet、戦略と実行の「ずれ」を解消へ― ENGAGE 2026 でAIが業務を担う新機能を発表 ― ニコニコニュース",
+      "source": "ニコニコニュース",
+      "date": "2026/11/05",
+      "tag": "ニュース",
+      "score": 1
+    },
+    {
+      "title": "グリッド、電力業務支援システムに生成ＡＩ機能を追加、計算エラーの原因を日本語で説明 - https://kabu-ir.com/",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBTTGtpU3ktUl92UVlnc2h3UWRqYkdQM0VDS045bFV2WS1XS0pvUmUxWGZaQTN1bjNwZHZCUzYtcURpTFdXQmEzZF9pbHNnbkdhNEpLYw?oc=5",
+      "summary": "グリッド、電力業務支援システムに生成ＡＩ機能を追加、計算エラーの原因を日本語で説明 https://kabu-ir.com/",
+      "source": "https://kabu-ir.com/",
       "date": "2026/11/05",
       "tag": "ニュース",
       "score": 1
@@ -110,15 +119,6 @@
       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9XNUZia3J5Si1HTWlyZHlQbTE3TnNLNmk3NWlXV2VONWN2MXFIdWFYOEZDZ2NhY215ZGM4T0RQUzdrS1JROXBNZ0lNMktPX0owR3FuVnctN1lNTUVrbUhKZ0J3cHZ5S29iQkR5NjV6TFJOc24x?oc=5",
       "summary": "Nothing、12月にスクリーンなしAIデバイスを発売へ CEOは「AIのiPhone」追及を否定 BigGo ファイナンス",
       "source": "BigGo ファイナンス",
-      "date": "2026/11/05",
-      "tag": "ニュース",
-      "score": 1
-    },
-    {
-      "title": "BIMSTOK、12/2～12/4開催 「JAPAN BUILD TOKYO-建築・土木・不動産の先端技術展-」に出展 - Excite エキサイト",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBtbkRuZGpQNkxBRTlBRGVCVWNXWDV3TFU4Szg5X016SjI0dThoY1JqMWZHelBtY0xWemh2OFZwV24zV3hfdDczZjQweW9rdTRCdXZ0dnEyZ3N6aVFUYXN0RFlSYXdpT0FrYmlpekpnNW9BcU0?oc=5",
-      "summary": "BIMSTOK、12/2～12/4開催 「JAPAN BUILD TOKYO-建築・土木・不動産の先端技術展-」に出展 Excite エキサイト",
-      "source": "Excite エキサイト",
       "date": "2026/11/05",
       "tag": "ニュース",
       "score": 1
