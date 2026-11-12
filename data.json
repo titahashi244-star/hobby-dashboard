@@ -1,15 +1,6 @@
 {
-  "updated_at": "2026/11/12 11:35",
+  "updated_at": "2026/11/12 12:33",
   "tennis": [
-    {
-      "title": "錦織圭、８強入り逃す テニスのツアー戦 - 山陽新聞",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE4wU0hxZ2JtOEhycGh0Y3BGb19uUTEyZFhuNk04cnZJZDBhR2FhenhwejYySUhIemNwSDJOa3hacVRJczFxZF81OWNWbldQcVRHaEQ1dzAxSVV4ZnJsZVFfREZpQXEyTnhzSVZHSF9Tdw?oc=5",
-      "summary": "錦織圭、８強入り逃す テニスのツアー戦 山陽新聞",
-      "source": "山陽新聞",
-      "date": "2026/11/12",
-      "tag": "ニュース",
-      "score": 1
-    },
     {
       "title": "全豪オープンテニス2014 4回戦 錦織圭vsR.ナダル 【錦織圭、感動をありがとう！ テニス名勝負戦】 - ABEMA",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1kY081MFZ1NDRiOVlyRUFfM2U5cU5fc3hiWElsNDl6RHRPSF9rZTByNGJtVDUwTGZmS0xRM0M2THNPTmg1cnpvYTVjX2x5RTI2a3dV?oc=5",
@@ -36,6 +27,15 @@
       "date": "2026/11/11",
       "tag": "ニュース",
       "score": 1
+    },
+    {
+      "title": "『さんまのまんま』秋SPゲスト発表、テニス・錦織圭が引退後初のバラエティー！坂口健太郎ら豪華俳優陣、CUTIE STREET、ORANGE RANGEも - https://miyoca.jp/",
+      "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9xYkNmMzJVRTFQYkUtZm1TOWs5cmdHMkJ5Y1BjNDZPMHc0ajNZbkdTb1Z6a2VYYXcxQ29wWG5ZRXBEUEV2?oc=5",
+      "summary": "『さんまのまんま』秋SPゲスト発表、テニス・錦織圭が引退後初のバラエティー！坂口健太郎ら豪華俳優陣、CUTIE STREET、ORANGE RANGEも https://miyoca.jp/",
+      "source": "https://miyoca.jp/",
+      "date": "2026/11/11",
+      "tag": "ニュース",
+      "score": 1
     }
   ],
   "tennis_keywords": [
@@ -44,6 +44,15 @@
     "ウィンブルドン"
   ],
   "music": [
+    {
+      "title": "大阪の年末音楽フェス『レディクレ』追加アーティスト発表 YUKIが登場へ【出演決定一覧あり】 - 山陽新聞",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9FLXZqeU9LYm5jVmFwZFFXVG5KRlphTmRYaDRRTHlrVjNrdC1rQjBJakpnNThOZTVTazJyWm9RNmpuRzVGbVBDZnd1REJ1NWtiOWEybmNOWGZsV3VGcVpsUHVWdw?oc=5",
+      "summary": "大阪の年末音楽フェス『レディクレ』追加アーティスト発表 YUKIが登場へ【出演決定一覧あり】 山陽新聞",
+      "source": "山陽新聞",
+      "date": "2026/11/12",
+      "tag": "ニュース",
+      "score": 1
+    },
     {
       "title": "大阪の年末音楽フェス『レディクレ』追加アーティスト発表 「LIVE HOUSE Antenna」に15組、さらに追加も予告【発表済含めた一覧】 - 山陽新聞",
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1DbFF1ak1NQmx2aEFMOURtUG1qN3NhRkYtVDgxX0IzbVZFa01Kd1hUc2JmM2p1bXZfeDFobVhjMFNGMExiYmxBb1kxN05UN0YtVmc?oc=5",
@@ -70,15 +79,6 @@
       "date": "2026/11/11",
       "tag": "ニュース",
       "score": 1
-    },
-    {
-      "title": "KATSEYE、欧州最大級フェス『シゲット・フェスティバル2027』ヘッドライナーに決定 - ニコニコニュース",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE03bEhZNEszaWVTaWV6cVRadDZQbGFFWTF1SlJRSE4yRnpvVnRBNkUzUnRDVXRnSTNaZXNEM0xnUXNIdWM1NTZUemx4cEpfM0R1emtlSmR6WTdNdW1HeHhISkl1b1o3YTRxWVRuc2RLVWtyOFh3WjdEdU9Cbw?oc=5",
-      "summary": "KATSEYE、欧州最大級フェス『シゲット・フェスティバル2027』ヘッドライナーに決定 ニコニコニュース",
-      "source": "ニコニコニュース",
-      "date": "2026/11/11",
-      "tag": "ニュース",
-      "score": 1
     }
   ],
   "music_keywords": [
@@ -88,20 +88,11 @@
   ],
   "tech": [
     {
-      "title": "東京・大阪開催！ユーザーミートアップイベント「ScanSnap NEXT 2026」スキャン×AIで広がる、情報の可能性 - ZDNET Japan",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9jQ0Via1Jfd1JXQUpVaC13STVJUl9EZ1dZRVBLNlFNNHBHNW9aR0Z3Rllwb0JUY3BSVXcwY2JKS2ZuUEpWNnJLX0J4T01lOFRRWk9F?oc=5",
-      "summary": "東京・大阪開催！ユーザーミートアップイベント「ScanSnap NEXT 2026」スキャン×AIで広がる、情報の可能性 ZDNET Japan",
-      "source": "ZDNET Japan",
+      "title": "東京・大阪開催！ユーザーミートアップイベント「ScanSnap NEXT 2026」スキャン×AIで広がる、情報の可能性 - 沖縄タイムス社",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5BRXdEbGVuZkJLRHVfMkJyVVRwVUdOOFJyOFMtbEFaM2dLWVZCemtiN1V6aWlZUVl2cnpzMmRKUVhHa3UtNGpndFdrRER5U0NWUmhieXNZMUExZmV2ZlE?oc=5",
+      "summary": "東京・大阪開催！ユーザーミートアップイベント「ScanSnap NEXT 2026」スキャン×AIで広がる、情報の可能性 沖縄タイムス社",
+      "source": "沖縄タイムス社",
       "date": "2026/11/12",
-      "tag": "ニュース",
-      "score": 1
-    },
-    {
-      "title": "スライドもAIでつくる時代。ChatGPT新機能「Slides」とGoogleスライドの実力を徹底比較 - ライフハッカー・ジャパン",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOMHZJcjhCdjZVZFZmTlZvOTBaMFdGenVfZ1Jvb1Q4ZDltMWtOaXJqc1FFLVZtYTBqajliZDRNTGRCeHVmS01LLWhCbnhiS2JuTWg0SF9kaUNWZzFYaU9zQ0tCNFgydmYxdlMxSVE2bm9hcHdOUmpPY3hzVzZaNThOQXZwbmU5Qmk2WUE?oc=5",
-      "summary": "スライドもAIでつくる時代。ChatGPT新機能「Slides」とGoogleスライドの実力を徹底比較 ライフハッカー・ジャパン",
-      "source": "ライフハッカー・ジャパン",
-      "date": "2026/11/11",
       "tag": "ニュース",
       "score": 1
     },
@@ -119,6 +110,15 @@
       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOc0dUcjRwOHU0SkVJQmtPenBBejRveWtmX2dpVVpzUllJVW9CeVZyWkJmNFhwTG1TY2RXQlBhZnVySm0wR09CY1JJc0NxblpNQ2JnazdGRkUtWkI0eXg1TEFCR0ZnS2R5WWlxbERCRG9zaVpzWjVmTGhMcG0xaDhsOQ?oc=5",
       "summary": "Claude内でAdobe製品やNotionなどを直接操作可能に、AIと一緒に写真編集や文書作成ができる新機能が登場 GIGAZINE",
       "source": "GIGAZINE",
+      "date": "2026/11/11",
+      "tag": "ニュース",
+      "score": 1
+    },
+    {
+      "title": "口コミをAIで集約するRedditの新機能、さっそく批判が相次ぐ理由とは - CNET Japan",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5JcDV2MkJRNERzRUN6anRRcGVkakctLU1YamwxbU9fTHJJcmhxUVNwQXdWUmo4aVJNWk1wVnhYMWloVVZvR3FaU3ZjVW5qb0xhRlE?oc=5",
+      "summary": "口コミをAIで集約するRedditの新機能、さっそく批判が相次ぐ理由とは CNET Japan",
+      "source": "CNET Japan",
       "date": "2026/11/11",
       "tag": "ニュース",
       "score": 1
