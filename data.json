@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/11/16 10:28",
+  "updated_at": "2026/11/16 11:32",
   "tennis": [
     {
       "title": "テニス＝ＡＴＰファイナル、世界1位ズベレフが白星発進（ロイター） - Yahoo!ニュース",
@@ -45,6 +45,24 @@
   ],
   "music": [
     {
+      "title": "柴咲コウ、プロデュースの『音楽フェス』が大阪で初開催。大阪城音楽堂で2027年に - 神戸ジャーナル",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE02SGV1SVdxSFEyUVFvMTctNkotd3QtcXJMdklZZmZuUlVnQU1BLS05RkkyNmRtRTN3MnJUMk91Q0tUckV3cDVkRTJ2VHBCUy00UFRjaXdSbHBYaTFhLXc?oc=5",
+      "summary": "柴咲コウ、プロデュースの『音楽フェス』が大阪で初開催。大阪城音楽堂で2027年に 神戸ジャーナル",
+      "source": "神戸ジャーナル",
+      "date": "2026/11/16",
+      "tag": "ニュース",
+      "score": 1
+    },
+    {
+      "title": "明和電機と国立音楽大学の学生が出演！小中学生が音を聴いて、知って、つくる「じぶんの音をつくろう！ワクワク音楽フェス」を国立市で開催 - PR TIMES",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE96R0VZVlZfVk1xYUpvbEg1dWhhcjUtWmtFYlFJZlNNQjM1N2ZWdng0V21ZQ1hDT3EtR1N2eEF4a2pMUGlMR2pUYmxlQTAzQnNpaHExVXdqV2pQZkdkQVhDNVdlc2FEWk56Vmc?oc=5",
+      "summary": "明和電機と国立音楽大学の学生が出演！小中学生が音を聴いて、知って、つくる「じぶんの音をつくろう！ワクワク音楽フェス」を国立市で開催 PR TIMES",
+      "source": "PR TIMES",
+      "date": "2026/11/16",
+      "tag": "ニュース",
+      "score": 1
+    },
+    {
       "title": "大阪の年末音楽フェス『レディクレ』第2弾アーティスト発表 一挙に24組＋スペシャルマッチ追加【一覧】 - 山陽新聞",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5oSGs2Q1F1enZEN0VRbDVBeDRhN3pxekkycXRZODlIWFhGNEtsYTNEdFFuUFpXQ2hlS2xacVkyMkpiZGl0NjhuMDh0U2dKY2JtejlpcGxxZXFfTmN2Szd0N0V0T1ZXcGN2OXE5UmtrNA?oc=5",
       "summary": "大阪の年末音楽フェス『レディクレ』第2弾アーティスト発表 一挙に24組＋スペシャルマッチ追加【一覧】 山陽新聞",
@@ -61,24 +79,6 @@
       "date": "2026/11/16",
       "tag": "ニュース",
       "score": 1
-    },
-    {
-      "title": "大阪の年末音楽フェス『レディクレ』詳細＆第1弾アーティスト発表…一挙36組【一覧】 - 山陽新聞",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQSmwtSXdDY3JPU2pZc2FfWGY0WDJDeFBoLTlZVVBWU0Vsc1NlS21tSmVtNXRKc19LME1JVUNlTWJ1X3pqck9oUjVYM2xpU0FUU2tiMWZPejhMUWVpVFpZVWw2WGFwdml6TWRKQ1d1aVRUOWV6d3ZQSEI0Y3lvczBUQlRmQmU5d2ljV1pwU2d6VEoxNlJqeWpTY2VYNnlMR2NzcTRqVWdiWktrVEktWUI5cmE5Tkg2dWJYUzRCWnRuNHN6aUdSekZ6UVVOOA?oc=5",
-      "summary": "大阪の年末音楽フェス『レディクレ』詳細＆第1弾アーティスト発表…一挙36組【一覧】 山陽新聞",
-      "source": "山陽新聞",
-      "date": "2026/11/15",
-      "tag": "ニュース",
-      "score": 1
-    },
-    {
-      "title": "YOASOBI、米シカゴで世界最大級の音楽フェス『Lollapalooza』出演へ…ライブ配信情報 - 山陽新聞",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9nNFlyVzBzSHh2ZkNnUDNBZjVGZ2VDRmhQb0lvVkxDcndfTEhCQWk4ZFZSTURCWDBzWFpuaU9tX0x2Nm1TLTJSb1JXeENNUnR0ckFiT2Vfc0I0aTEzaWZUd0p2WnRkZHUy?oc=5",
-      "summary": "YOASOBI、米シカゴで世界最大級の音楽フェス『Lollapalooza』出演へ…ライブ配信情報 山陽新聞",
-      "source": "山陽新聞",
-      "date": "2026/11/15",
-      "tag": "ニュース",
-      "score": 1
     }
   ],
   "music_keywords": [
@@ -87,6 +87,15 @@
     "ロックフェス"
   ],
   "tech": [
+    {
+      "title": "Z Creative Partners、ChatGPTの企業向け新機能を受け、ブランド評価・改善支援の強化方針を発表 - ニコニコニュース",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5HMDNhQXJIRVlZR2RabE82eVRWNGkzMTlRc0dnY0cyRnFHOW5DaXVHajN6MmlJOS16am9KaEtjSUVOMmltMWMxY1FGYUFxS2V3VWlDU2dveEVWXzZlUjc3dTRMNHF5OHhWYU1paHZrSUN5dVRJM3FsbElnaw?oc=5",
+      "summary": "Z Creative Partners、ChatGPTの企業向け新機能を受け、ブランド評価・改善支援の強化方針を発表 ニコニコニュース",
+      "source": "ニコニコニュース",
+      "date": "2026/11/16",
+      "tag": "ニュース",
+      "score": 1
+    },
     {
       "title": "OpenAIが集客向け新機能──ChatGPTで企業が商品紹介ページを開設、AIが接客 - Forbes JAPAN",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBlWExVWVFGYUhPb2s1ZTBLekVhaERRczc2My1WeHl2SzByR0k1bzZtU2QxVnVWZWRvemhqSFFFcEJ4ekpuTENOUXRBSGVlVVhtRGUyNU45S3VPQQ?oc=5",
@@ -111,15 +120,6 @@
       "summary": "サイボウズ、AIをチームの一員として業務に組み込むkintoneの新機能「プロセスAIエージェント」を提供 クラウド Watch",
       "source": "クラウド Watch",
       "date": "2026/11/16",
-      "tag": "ニュース",
-      "score": 1
-    },
-    {
-      "title": "「気になるけど自分に合うか分からないガジェットこそセールで狙う」～ブラックフライデーほしい物リスト60 - GoodsPress Web",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5iS1g1N1lCZVhPSGRmWWxYUHpiUFpNNUJpZHBtZFJva21QYVpGZURrclJJUEVhdS1sSF9aSDZXa045UWd4Q2FXdUNZZ0pxTC1IeXVWLQ?oc=5",
-      "summary": "「気になるけど自分に合うか分からないガジェットこそセールで狙う」～ブラックフライデーほしい物リスト60 GoodsPress Web",
-      "source": "GoodsPress Web",
-      "date": "2026/11/15",
       "tag": "ニュース",
       "score": 1
     }
