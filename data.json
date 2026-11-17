@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/11/17 13:15",
+  "updated_at": "2026/11/17 13:56",
   "tennis": [
     {
       "title": "テニス＝ＡＴＰファイナル、アルカラスとメドベージェフが白星スタート - Reuters",
@@ -86,13 +86,87 @@
     "音楽フェス",
     "ロックフェス"
   ],
-  "tech": [],
+  "tech": [
+    {
+      "title": "｢iOS 27.3 beta 2｣の新機能や変更点のまとめ——｢iPhone Duo｣の簡易Face ID搭載など - 気になる、記になる…",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9acGZMOVRseGJ2MjhFb0FRTjhtZUlPVmRfZFpQdU1HOTVjRkFGeERtYV9SQlhRTkZBM0lrbXhwTUFyalJ5dERHWEd2NDY2eUc2SURn?oc=5",
+      "summary": "｢iOS 27.3 beta 2｣の新機能や変更点のまとめ——｢iPhone Duo｣の簡易Face ID搭載など 気になる、記になる…",
+      "source": "気になる、記になる…",
+      "date": "2026/11/17",
+      "tag": "ニュース",
+      "score": 1
+    },
+    {
+      "title": "ネオスのAIエージェント【OfficeAI社員】、専門領域の複雑な質問にも対応する新機能「DeepReadsモード」をリリース - PR TIMES",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBEck5GRXRiX1RHRDZRdFNJN2pEVnhiSmtIWXFSTV81Y0RxTXp6MjI2WHZ6VzZkaXlndjE0ODFYTUk3QUM3V24xOGZqMzlZd3cxQXZpZDFubmRWYVFCTjU2NUpLZzFrdkQ5Unc?oc=5",
+      "summary": "ネオスのAIエージェント【OfficeAI社員】、専門領域の複雑な質問にも対応する新機能「DeepReadsモード」をリリース PR TIMES",
+      "source": "PR TIMES",
+      "date": "2026/11/17",
+      "tag": "ニュース",
+      "score": 1
+    },
+    {
+      "title": "「AI:Promo」画像編集にOpenAI最新モデル「GPT-Image-2.6 Sunburst」を採用、画像に直接指示できる新機能も追加 - Excite エキサイト",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBTNDY4dTZFRHVuMDlBQVB4dFZaVW5vN1NNVzl1bEpkLU9lWEFyaEQ0NnF4bG0zUmVYdllmSUVLdkpnM0hMVnBvUzhqV3lKNlZyZFFtaEVydlR3Z0E0S0RJZVBXMTZjN1hTMFJaSHA5bDhYSkM2?oc=5",
+      "summary": "「AI:Promo」画像編集にOpenAI最新モデル「GPT-Image-2.6 Sunburst」を採用、画像に直接指示できる新機能も追加 Excite エキサイト",
+      "source": "Excite エキサイト",
+      "date": "2026/11/17",
+      "tag": "ニュース",
+      "score": 1
+    },
+    {
+      "title": "VAIOから“モバイルのベストバランス”を追求したS13登場、定番F16／F14も進化 - GetNavi web",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9tVEpCaUVzVElpeXFXcm9rZFhqZF9sajllRTAtR1JpVHE3c09hQ002bm04bVJYZnE4UnRMTGtvaE1fcEE1YlhDcEJIWQ?oc=5",
+      "summary": "VAIOから“モバイルのベストバランス”を追求したS13登場、定番F16／F14も進化 GetNavi web",
+      "source": "GetNavi web",
+      "date": "2026/11/17",
+      "tag": "ニュース",
+      "score": 1
+    }
+  ],
   "tech_keywords": [
     "AIニュース",
     "新製品",
     "ガジェット"
   ],
-  "culture": [],
+  "culture": [
+    {
+      "title": "酒気帯びで当直勤務の疑い…東海汽船に国土交通省が行政処分案を通知 「死活問題」離島の住民は困惑 - 東京新聞",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE80eDYwanZfTWV2d2xMN1BQTXEyOTVpSDREb1pfWEJIYXNQTFV4UnNtdHF3WUJ4SGhuQUl3cUpRZjRFV3hKMzR6TWNueXNLa0NPb1Nv?oc=5",
+      "summary": "酒気帯びで当直勤務の疑い…東海汽船に国土交通省が行政処分案を通知 「死活問題」離島の住民は困惑 東京新聞",
+      "source": "東京新聞",
+      "date": "2026/08/13",
+      "tag": "ニュース",
+      "score": 1
+    },
+    {
+      "title": "海の見える・水辺の美術館おすすめ14選：建築と自然を楽しむ全国のアートスポット - Tokyo Art Beat",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBrMUdVbk5mSV8yLWM0RjBRYVJiMnVtUDM4R0Ixbmtzbjh2VS1FSlA0NFItZ1J0ZFNUcjFPWW5vWGpkR3RoUWo5MU5nclozbl9tSUl1OXlNSU5ta0tFNWl4a2Y0UUxKMml3RE42cW5iTQ?oc=5",
+      "summary": "海の見える・水辺の美術館おすすめ14選：建築と自然を楽しむ全国のアートスポット Tokyo Art Beat",
+      "source": "Tokyo Art Beat",
+      "date": "2025/07/04",
+      "tag": "ニュース",
+      "score": 1
+    },
+    {
+      "title": "東京駅で島の特産品をＰＲ 奄美群島の３業者団体出展 離島百貨店「島のめぐみ」｜社会・経済 - 南海日日新聞｜奄美",
+      "url": "https://news.google.com/rss/articles/CBMi2gJBVV95cUxNNHNrQzU2S3oxRVdhZ0tpeGZtZ3hnNnJILUlSLWxDdW9Qd3J5QVItNmVKdGp3VC1GTXhUaUtGcC0tOVFsLXd4bHB0ZThremM2d3haYndUMks0NEt0Uy1wSnhsMUtrNjhYYUxzVWM0TFFBd2Vpa1RSRERqV0hFdkJfZ2RiSHZLa2cxUVhLZ0huaVdmQ2h3VUNPQlBOTG5tb2EwNTFTU2xraWFwdEVaaDhYOEtkcWpaaVh2cFg5bWxlSWlsTGdEVGdCYnQ2RVlMNVd0MUl0VWJLZHhkV1ZhbFN0V1lZUFh1TGNZSzYwQ3VCOERyZ3NEeXdkckFJV09OdHJWZXY4WmtqN1RQZ3FfeVVBMk9aMVFpTVZzU0VPM241dmctclBCbDVFTnlNdldVS0dRcEJLWnBjd3RWcWpqUnROTl9xYS1HSmxCN3hzLXFrTDMwVTViWVdBeEdR?oc=5",
+      "summary": "東京駅で島の特産品をＰＲ 奄美群島の３業者団体出展 離島百貨店「島のめぐみ」｜社会・経済 南海日日新聞｜奄美",
+      "source": "南海日日新聞｜奄美",
+      "date": "2024/12/05",
+      "tag": "ニュース",
+      "score": 1
+    },
+    {
+      "title": "はいさいFESTA 2026｜レッツエンジョイ東京 - レッツエンジョイ東京",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE16RE42aElFcThyNURlTWk0SERuaEtHYnR1ZjNWaXd5ODhENW5JWXN6cUE4SURyOFYzRG56VG1SeWxGLWZEdHVmRl83NG1FRHg1?oc=5",
+      "summary": "はいさいFESTA 2026｜レッツエンジョイ東京 レッツエンジョイ東京",
+      "source": "レッツエンジョイ東京",
+      "date": "2021/10/06",
+      "tag": "ニュース",
+      "score": 1
+    }
+  ],
   "culture_keywords": [
     "展覧会",
     "川崎/鶴見",
